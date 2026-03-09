@@ -94,9 +94,17 @@ export default function Home() {
         </div>
       </section>
       <section className="py-32 px-6 max-w-5xl mx-auto">
-        <h2 className="mb-16 text-sm tracking-widest text-neutral-500">
+        <h2 className="mb-6 text-sm tracking-widest text-neutral-500">
           VISUAL
         </h2>
+        <p
+          className="mb-12 text-base leading-relaxed text-neutral-700 md:text-lg"
+          style={{ fontWeight: 300 }}
+        >
+          本作の舞台となる風景。
+          <br />
+          地域に残された景色と記憶を、少しずつ映像として記録している。
+        </p>
 
         <div className="grid gap-12 md:grid-cols-2">
           <div>
@@ -176,31 +184,6 @@ export default function Home() {
             <li>・スポンサー</li>
           </ul>
           <p>詳細はお問い合わせください。</p>
-        </div>
-      </section>
-
-      {/* Visual Section */}
-      <section className="py-32 px-6 max-w-4xl mx-auto border-t border-neutral-200">
-        <h2 className="text-sm tracking-widest mb-16 text-neutral-500">
-          VISUAL
-        </h2>
-        <div className="space-y-10">
-          <p
-            className="text-base md:text-lg leading-relaxed"
-            style={{ fontWeight: 300 }}
-          >
-            本作の舞台となる風景。
-            <br />
-            地域に残された景色と記憶を、少しずつ映像として記録している。
-          </p>
-          <div className="grid gap-4 md:grid-cols-3">
-            {Array.from({ length: 3 }).map((_, index) => (
-              <div
-                key={index}
-                className="aspect-[4/3] border border-neutral-200 bg-neutral-100"
-              />
-            ))}
-          </div>
         </div>
       </section>
 
