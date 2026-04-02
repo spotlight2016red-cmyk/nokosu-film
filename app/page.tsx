@@ -176,15 +176,15 @@ export default function Home() {
           <NewsRow date="2026.03">
             <p className="mb-4">インタビュー撮影開始</p>
             <ul className="list-none space-y-3 pl-0 text-neutral-700">
-              <li>・司法書士 ：山本達夫</li>
+              <li>・司法書士 ：山本達夫さま</li>
               <li>
                 ・株式会社一鴻 代表取締役/
                 <br />
                 <span className="inline-block pl-[1.1em]">
-                  阿波おどり未来へつなぐ実行委員長：庄野 浩司
+                  阿波おどり未来へつなぐ実行委員長：庄野 浩司さま
                 </span>
               </li>
-              <li>・株式会社ナカテツ 専務取締役：笠井 武</li>
+              <li>・株式会社ナカテツ 専務取締役：笠井 武さま</li>
             </ul>
           </NewsRow>
         </div>
