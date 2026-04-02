@@ -151,6 +151,17 @@ export default function Home() {
             </p>
           </div>
         </div>
+
+        <div className="mx-auto mt-16 max-w-md md:mt-20">
+          <img
+            src="/visual-sakura-matsuri.png"
+            alt="桜まつりの川での舟行"
+            className="w-full max-h-[min(70vh,720px)] rounded-sm object-cover"
+          />
+          <p className="mt-3 text-sm leading-relaxed text-neutral-500">
+            桜まつりスタート
+          </p>
+        </div>
       </section>
       {/* News Section */}
       <section className="py-32 px-6 max-w-4xl mx-auto border-t border-neutral-200">
