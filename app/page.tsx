@@ -198,52 +198,68 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="py-32 px-6 max-w-4xl mx-auto border-t border-neutral-200">
-        <h2 className="text-sm tracking-widest mb-16 text-neutral-500">
-          CONTACT
-        </h2>
-        <div className="space-y-8">
-          <p className="text-lg" style={{ fontWeight: 300 }}>
-            お問い合わせ
-          </p>
-          <form className="space-y-6">
-            <div>
-              <label className="mb-2 block text-sm text-neutral-500">
-                お名前
-              </label>
-              <input
-                type="text"
-                className="w-full border-b border-neutral-300 bg-transparent pb-2 outline-none transition-colors focus:border-neutral-900"
-              />
-            </div>
-            <div>
-              <label className="mb-2 block text-sm text-neutral-500">
-                メールアドレス
-              </label>
-              <input
-                type="email"
-                className="w-full border-b border-neutral-300 bg-transparent pb-2 outline-none transition-colors focus:border-neutral-900"
-              />
-            </div>
-            <div>
-              <label className="mb-2 block text-sm text-neutral-500">
-                メッセージ
-              </label>
-              <textarea
-                rows={6}
-                className="w-full resize-none border border-neutral-300 bg-transparent p-4 outline-none transition-colors focus:border-neutral-900"
-              />
-            </div>
-            <button
-              type="submit"
-              className="px-12 py-3 border border-neutral-900 text-sm transition-colors hover:bg-neutral-900 hover:text-white"
-            >
-              送信
-            </button>
-          </form>
-        </div>
-      </section>
+      <form
+  action="https://formspree.io/f/mojpnady"
+  method="POST"
+  className="space-y-6"
+>
+  <div>
+    <label className="mb-2 block text-sm text-neutral-500">
+      お名前
+    </label>
+    <input
+      type="text"
+      name="name"
+      required
+      className="w-full border-b border-neutral-300 bg-transparent pb-2 outline-none transition-colors focus:border-neutral-900"
+    />
+  </div>
+
+  <div>
+    <label className="mb-2 block text-sm text-neutral-500">
+      メールアドレス
+    </label>
+    <input
+      type="email"
+      name="email"
+      required
+      className="w-full border-b border-neutral-300 bg-transparent pb-2 outline-none transition-colors focus:border-neutral-900"
+    />
+  </div>
+
+  <div>
+    <label className="mb-2 block text-sm text-neutral-500">
+      メッセージ
+    </label>
+    <textarea
+      name="message"
+      required
+      rows={6}
+      className="w-full resize-none border border-neutral-300 bg-transparent p-4 outline-none transition-colors focus:border-neutral-900"
+    />
+  </div>
+
+  {/* 件名 */}
+  <input
+    type="hidden"
+    name="_subject"
+    value="映画LPからお問い合わせが届きました"
+  />
+
+  {/* 送信後ページ */}
+  <input
+    type="hidden"
+    name="_next"
+    value="https://nokosu-film.vercel.app/thanks"
+  />
+
+  <button
+    type="submit"
+    className="px-12 py-3 border border-neutral-900 text-sm transition-colors hover:bg-neutral-900 hover:text-white"
+  >
+    送信
+  </button>
+</form>
 
       {/* Footer */}
       <footer className="border-t border-neutral-200 px-6 py-16 text-center text-sm text-neutral-500">
