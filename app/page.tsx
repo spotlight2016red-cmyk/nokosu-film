@@ -94,16 +94,10 @@ export default function Home() {
               </ul>
             </div>
 
-            <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-              <a
-                href="#screening"
-                className="inline-flex min-h-[52px] w-full items-center justify-center rounded-full border border-neutral-900 px-8 text-sm tracking-widest text-neutral-900 transition-colors hover:bg-neutral-900 hover:text-white sm:w-auto"
-              >
-                上映会の詳細を見る
-              </a>
+            <div className="flex justify-center pt-2">
               <a
                 href="#contact"
-                className="inline-flex min-h-[52px] w-full items-center justify-center rounded-full bg-neutral-900 px-8 text-sm tracking-widest text-white transition-colors hover:bg-neutral-800 sm:w-auto"
+                className="inline-flex min-h-[52px] w-full items-center justify-center rounded-full bg-neutral-900 px-10 text-sm tracking-widest text-white transition-colors hover:bg-neutral-800 sm:w-auto sm:min-w-[320px]"
               >
                 参加を申し込む
               </a>
