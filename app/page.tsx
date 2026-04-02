@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import Image from "next/image";
+import { ContactForm } from "./components/ContactForm";
 
 export default function Home() {
   return (
@@ -218,88 +219,7 @@ export default function Home() {
         <h2 className="text-sm tracking-widest mb-16 text-neutral-500">
           CONTACT
         </h2>
-        <form
-          action="https://formspree.io/f/mojpnady"
-          method="POST"
-          className="mx-auto max-w-2xl space-y-6"
-        >
-  <div>
-    <label className="mb-2 block text-sm text-neutral-500">
-      お名前
-    </label>
-    <input
-      type="text"
-      name="name"
-      required
-      className="w-full border-b border-neutral-300 bg-transparent pb-2 outline-none transition-colors focus:border-neutral-900"
-    />
-  </div>
-
-  <div>
-    <label className="mb-2 block text-sm text-neutral-500">
-      メールアドレス
-    </label>
-    <input
-      type="email"
-      name="email"
-      required
-      className="w-full border-b border-neutral-300 bg-transparent pb-2 outline-none transition-colors focus:border-neutral-900"
-    />
-  </div>
-
-  <div>
-    <label className="mb-2 block text-sm text-neutral-500">
-      お問い合わせ種別
-    </label>
-    <select
-      name="type"
-      required
-      defaultValue=""
-      className="w-full border-b border-neutral-300 bg-transparent pb-2 text-neutral-900 outline-none transition-colors focus:border-neutral-900"
-    >
-      <option value="" disabled>
-        お問い合わせ種別を選択
-      </option>
-      <option value="上映について">上映について</option>
-      <option value="取材・出演について">取材・出演について</option>
-      <option value="スポンサー・協力について">スポンサー・協力について</option>
-      <option value="その他">その他</option>
-    </select>
-  </div>
-
-  <div>
-    <label className="mb-2 block text-sm text-neutral-500">
-      メッセージ
-    </label>
-    <textarea
-      name="message"
-      required
-      rows={6}
-      className="w-full resize-none border border-neutral-300 bg-transparent p-4 outline-none transition-colors focus:border-neutral-900"
-    />
-  </div>
-
-  {/* 件名 */}
-  <input
-    type="hidden"
-    name="_subject"
-    value="映画LPからお問い合わせが届きました"
-  />
-
-  {/* 送信後ページ */}
-  <input
-    type="hidden"
-    name="_next"
-    value="https://nokosu-film.vercel.app/thanks"
-  />
-
-  <button
-    type="submit"
-    className="px-12 py-3 border border-neutral-900 text-sm transition-colors hover:bg-neutral-900 hover:text-white"
-  >
-    送信
-  </button>
-        </form>
+        <ContactForm />
       </section>
 
       {/* Footer */}
