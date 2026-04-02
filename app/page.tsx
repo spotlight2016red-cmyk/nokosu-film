@@ -191,6 +191,36 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Interview Section */}
+      <section className="py-32 px-6 max-w-4xl mx-auto border-t border-neutral-200">
+        <h2 className="mb-16 text-sm tracking-widest text-neutral-500">
+          INTERVIEW
+        </h2>
+        <div className="grid gap-12 md:grid-cols-3">
+          <div>
+            <img
+              src="/interview1.png"
+              alt="インタビューの様子 1"
+              className="w-full h-[320px] object-cover rounded-sm"
+            />
+          </div>
+          <div>
+            <img
+              src="/interview2.png"
+              alt="インタビューの様子 2"
+              className="w-full h-[320px] object-cover rounded-sm"
+            />
+          </div>
+          <div>
+            <img
+              src="/interview3.png"
+              alt="インタビューの様子 3"
+              className="w-full h-[320px] object-cover rounded-sm"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Support Section */}
       <section className="py-32 px-6 max-w-4xl mx-auto border-t border-neutral-200">
         <h2 className="text-sm tracking-widest mb-16 text-neutral-500">
