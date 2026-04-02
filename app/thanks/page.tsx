@@ -13,11 +13,18 @@ export default function ThanksPage() {
         <h1 className="mb-6 text-2xl font-light text-neutral-900 md:text-3xl">
           ありがとうございます！
         </h1>
-        <p className="mb-4 text-base font-light leading-relaxed text-neutral-600 md:text-lg">
-          お問い合わせを受け付けました。内容を確認のうえ、ご連絡いたします。
+        <p className="mb-6 text-base font-light leading-relaxed text-neutral-600 md:text-lg">
+          お問い合わせを受け付けました。
+          <br />
+          内容を確認のうえ、順次ご連絡いたします。
         </p>
-        <p className="mb-10 text-sm font-light leading-relaxed text-neutral-500 md:text-base">
-          通常、1〜2日以内に返信いたします。
+        <p className="mb-6 text-sm font-light leading-relaxed text-neutral-500 md:text-base">
+          通常、1〜2日以内にご返信いたします。
+        </p>
+        <p className="mb-10 text-base font-light leading-relaxed text-neutral-600 md:text-lg">
+          あなたの想いに触れられることを、
+          <br />
+          楽しみにしております。
         </p>
         <Link
           href="/"
