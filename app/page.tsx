@@ -16,12 +16,13 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 text-center text-white px-6">
-          <p
-            className="mx-auto mb-8 inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-5 py-2 text-xs tracking-widest backdrop-blur-sm md:text-sm"
+          <a
+            href="#screening"
+            className="mx-auto mb-10 inline-flex min-h-[52px] w-full max-w-md items-center justify-center rounded-full border border-white/35 bg-white/85 px-6 text-sm tracking-widest text-neutral-900 backdrop-blur-sm transition-colors hover:bg-white md:text-base"
             style={{ fontWeight: 300 }}
           >
-            5/30・31 勝浦町での上映会決定
-          </p>
+            5/30・31 勝浦町 上映会はこちら
+          </a>
           <h1
             className="text-6xl md:text-8xl mb-6 tracking-wider"
             style={{ fontWeight: 300 }}
@@ -37,6 +38,77 @@ export default function Home() {
           <p className="text-sm tracking-widest opacity-90">
             DOCUMENTARY FILM / IN PRODUCTION
           </p>
+        </div>
+      </section>
+
+      {/* Screening Section */}
+      <section
+        id="screening"
+        className="py-24 md:py-32 px-6 max-w-5xl mx-auto"
+      >
+        <h2 className="text-sm tracking-widest mb-6 text-neutral-500">
+          上映会のご案内
+        </h2>
+        <div
+          className="grid gap-10 md:grid-cols-2"
+          style={{ fontWeight: 300 }}
+        >
+          <div className="space-y-8">
+            <div className="space-y-2">
+              <p className="text-xs tracking-widest text-neutral-500">日程</p>
+              <p className="text-lg md:text-xl text-neutral-900">
+                2026年5月30日（土）
+                <br />
+                2026年5月31日（日）
+              </p>
+            </div>
+
+            <div className="space-y-2">
+              <p className="text-xs tracking-widest text-neutral-500">場所</p>
+              <p className="text-lg md:text-xl text-neutral-900">
+                徳島県 勝浦町
+              </p>
+              <p className="text-sm leading-relaxed text-neutral-500">
+                ※詳細住所・会場名は確定次第お知らせします。
+              </p>
+            </div>
+
+            <div className="space-y-2">
+              <p className="text-xs tracking-widest text-neutral-500">内容</p>
+              <ul className="space-y-2 text-lg md:text-xl text-neutral-900">
+                <li>・ドキュメンタリー映画上映</li>
+                <li>・上映後トーク（予定）</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="space-y-8">
+            <div className="space-y-3">
+              <p className="text-xs tracking-widest text-neutral-500">
+                こんな方へ
+              </p>
+              <ul className="space-y-2 text-base md:text-lg leading-relaxed text-neutral-700">
+                <li>・自分の生き方を見つめ直したい方</li>
+                <li>・地域や“継承”に関心がある方</li>
+                <li>・何かを始めたいけど一歩踏み出せない方</li>
+              </ul>
+            </div>
+
+            <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+              <a
+                href="#screening"
+                className="inline-flex min-h-[52px] w-full items-center justify-center rounded-full border border-neutral-900 px-8 text-sm tracking-widest text-neutral-900 transition-colors hover:bg-neutral-900 hover:text-white sm:w-auto"
+              >
+                上映会の詳細を見る
+              </a>
+              <a
+                href="#contact"
+                className="inline-flex min-h-[52px] w-full items-center justify-center rounded-full bg-neutral-900 px-8 text-sm tracking-widest text-white transition-colors hover:bg-neutral-800 sm:w-auto"
+              >
+                参加を申し込む
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -251,7 +323,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-t border-neutral-200 px-6 py-32 max-w-4xl mx-auto">
+      <section
+        id="contact"
+        className="border-t border-neutral-200 px-6 py-32 max-w-4xl mx-auto"
+      >
         <h2 className="text-sm tracking-widest mb-16 text-neutral-500">
           CONTACT
         </h2>
