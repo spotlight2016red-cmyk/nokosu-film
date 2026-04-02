@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import Image from "next/image";
 
 export default function Home() {
@@ -169,8 +170,23 @@ export default function Home() {
           NEWS
         </h2>
         <div className="space-y-8" style={{ fontWeight: 300 }}>
-          <NewsRow date="2026.03" text="映画製作準備委員会を設立" />
-          <NewsRow date="2026.04" text="インタビュー撮影開始予定" />
+          <NewsRow date="2026.05">
+            <p>映画製作準備委員会を設立予定</p>
+          </NewsRow>
+          <NewsRow date="2026.03">
+            <p className="mb-4">インタビュー撮影開始</p>
+            <ul className="list-none space-y-3 pl-0 text-neutral-700">
+              <li>・司法書士 ：山本達夫</li>
+              <li>
+                ・株式会社一鴻 代表取締役/
+                <br />
+                <span className="inline-block pl-[1.1em]">
+                  阿波おどり未来へつなぐ実行委員長：庄野 浩司
+                </span>
+              </li>
+              <li>・株式会社ナカテツ 専務取締役：笠井 武</li>
+            </ul>
+          </NewsRow>
         </div>
       </section>
 
@@ -285,16 +301,16 @@ function InfoRow({ label, value }: InfoRowProps) {
 
 type NewsRowProps = {
   date: string;
-  text: string;
+  children: ReactNode;
 };
 
-function NewsRow({ date, text }: NewsRowProps) {
+function NewsRow({ date, children }: NewsRowProps) {
   return (
     <div className="flex flex-col md:flex-row md:gap-12">
       <span className="mb-2 min-w-[120px] text-neutral-500 md:mb-0">
         {date}
       </span>
-      <span>{text}</span>
+      <div className="min-w-0 flex-1">{children}</div>
     </div>
   );
 }
