@@ -214,11 +214,15 @@ export default function Home() {
         </div>
       </section>
 
-      <form
-  action="https://formspree.io/f/mojpnady"
-  method="POST"
-  className="space-y-6"
->
+      <section className="border-t border-neutral-200 px-6 py-32 max-w-4xl mx-auto">
+        <h2 className="text-sm tracking-widest mb-16 text-neutral-500">
+          CONTACT
+        </h2>
+        <form
+          action="https://formspree.io/f/mojpnady"
+          method="POST"
+          className="mx-auto max-w-2xl space-y-6"
+        >
   <div>
     <label className="mb-2 block text-sm text-neutral-500">
       お名前
@@ -295,7 +299,8 @@ export default function Home() {
   >
     送信
   </button>
-</form>
+        </form>
+      </section>
 
       {/* Footer */}
       <footer className="border-t border-neutral-200 px-6 py-16 text-center text-sm text-neutral-500">
