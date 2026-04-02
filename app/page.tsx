@@ -16,6 +16,12 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 text-center text-white px-6">
+          <p
+            className="mx-auto mb-8 inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-5 py-2 text-xs tracking-widest backdrop-blur-sm md:text-sm"
+            style={{ fontWeight: 300 }}
+          >
+            5/30・31 勝浦町での上映会決定
+          </p>
           <h1
             className="text-6xl md:text-8xl mb-6 tracking-wider"
             style={{ fontWeight: 300 }}
