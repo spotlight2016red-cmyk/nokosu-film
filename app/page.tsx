@@ -245,6 +245,26 @@ export default function Home() {
 
   <div>
     <label className="mb-2 block text-sm text-neutral-500">
+      お問い合わせ種別
+    </label>
+    <select
+      name="type"
+      required
+      defaultValue=""
+      className="w-full border-b border-neutral-300 bg-transparent pb-2 text-neutral-900 outline-none transition-colors focus:border-neutral-900"
+    >
+      <option value="" disabled>
+        お問い合わせ種別を選択
+      </option>
+      <option value="上映について">上映について</option>
+      <option value="取材・出演について">取材・出演について</option>
+      <option value="スポンサー・協力について">スポンサー・協力について</option>
+      <option value="その他">その他</option>
+    </select>
+  </div>
+
+  <div>
+    <label className="mb-2 block text-sm text-neutral-500">
       メッセージ
     </label>
     <textarea
