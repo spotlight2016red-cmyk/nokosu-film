@@ -7,10 +7,12 @@ const FORMSPREE_URL = "https://formspree.io/f/mojpnady";
 
 const TICKET_INQUIRY = "チケットの申し込み";
 
-const TICKET_MESSAGE_HINT = `枚数とお支払いをお書きください。
+const TICKET_MESSAGE_HINT = `チケット枚数とお支払い方法をご記入ください
 
-・枚数
-・支払い方法(当日 or 事前決済)`;
+・枚数（例：1枚 / 2枚）
+・お支払い方法（当日 / 事前）
+
+※お申し込み後、詳細をご案内いたします。`;
 
 export function ContactForm() {
   const router = useRouter();
