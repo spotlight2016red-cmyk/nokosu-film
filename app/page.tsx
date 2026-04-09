@@ -104,9 +104,9 @@ export default function Home() {
             <div className="flex justify-center pt-2">
               <a
                 href="#contact"
-                className="inline-flex min-h-[52px] w-full items-center justify-center rounded-full bg-neutral-900 px-10 text-sm tracking-widest text-white transition-colors hover:bg-neutral-800 sm:w-auto sm:min-w-[320px]"
+                className="inline-flex min-h-[52px] w-full items-center justify-center whitespace-normal rounded-full bg-neutral-900 px-8 py-3 text-center text-sm tracking-widest text-white transition-colors hover:bg-neutral-800 sm:w-auto sm:min-w-[360px] sm:px-10"
               >
-                参加を申し込む
+                申し込みはコチラ
               </a>
             </div>
           </div>
