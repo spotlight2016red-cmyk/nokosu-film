@@ -253,6 +253,12 @@ export default function Home() {
           <NewsRow date="2026.05">
             <p>映画製作準備委員会を設立予定</p>
           </NewsRow>
+          <NewsRow date="2026.04">
+            <p className="mb-4">4月7日 インタビュー撮影</p>
+            <ul className="list-none space-y-3 pl-0 text-neutral-700">
+              <li>・中津峰山如意輪寺 住職：山田 弘乘さま</li>
+            </ul>
+          </NewsRow>
           <NewsRow date="2026.03">
             <p className="mb-4">インタビュー撮影開始</p>
             <ul className="list-none space-y-3 pl-0 text-neutral-700">
@@ -275,7 +281,7 @@ export default function Home() {
         <h2 className="mb-16 text-sm tracking-widest text-neutral-500">
           INTERVIEW
         </h2>
-        <div className="grid gap-12 md:grid-cols-3">
+        <div className="grid gap-12 sm:grid-cols-2 xl:grid-cols-4">
           <div>
             <img
               src="/interview1.png"
@@ -294,6 +300,13 @@ export default function Home() {
             <img
               src="/interview3.png"
               alt="インタビューの様子 3"
+              className="w-full h-[320px] object-cover rounded-sm"
+            />
+          </div>
+          <div>
+            <img
+              src="/interview4.png"
+              alt="中津峰山如意輪寺 住職 山田弘乘さまのインタビュー"
               className="w-full h-[320px] object-cover rounded-sm"
             />
           </div>
