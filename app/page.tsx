@@ -21,7 +21,7 @@ export default function Home() {
             className="mx-auto mb-10 inline-flex min-h-[52px] w-full max-w-md items-center justify-center rounded-full border border-white/35 bg-white/85 px-6 text-sm tracking-widest text-neutral-900 backdrop-blur-sm transition-colors hover:bg-white md:text-base"
             style={{ fontWeight: 300 }}
           >
-            5/30・31 勝浦町 上映会はこちら
+            5/30 勝浦町 上映会はこちら
           </a>
           <h1
             className="text-6xl md:text-8xl mb-6 tracking-wider"
@@ -58,18 +58,20 @@ export default function Home() {
               <p className="text-xs tracking-widest text-neutral-500">日程</p>
               <p className="text-lg md:text-xl text-neutral-900">
                 2026年5月30日（土）
-                <br />
-                2026年5月31日（日）
               </p>
+            </div>
+
+            <div className="space-y-2">
+              <p className="text-xs tracking-widest text-neutral-500">時間</p>
+              <p className="text-lg md:text-xl text-neutral-900">14:00〜</p>
             </div>
 
             <div className="space-y-2">
               <p className="text-xs tracking-widest text-neutral-500">場所</p>
               <p className="text-lg md:text-xl text-neutral-900">
-                徳島県 勝浦町
-              </p>
-              <p className="text-sm leading-relaxed text-neutral-500">
-                ※詳細住所・会場名は確定次第お知らせします。
+                勝浦町人形交流館
+                <br />
+                徳島県勝浦町生名月ノ瀬35-1
               </p>
             </div>
 
@@ -79,6 +81,11 @@ export default function Home() {
                 <li>・ドキュメンタリー映画上映</li>
                 <li>・上映後トーク（予定）</li>
               </ul>
+            </div>
+
+            <div className="space-y-2">
+              <p className="text-xs tracking-widest text-neutral-500">チケット</p>
+              <p className="text-lg md:text-xl text-neutral-900">1500円</p>
             </div>
           </div>
 
