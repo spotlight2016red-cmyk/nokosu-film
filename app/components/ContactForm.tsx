@@ -132,7 +132,7 @@ export function ContactForm() {
           type="submit"
           className="border border-neutral-900 px-12 py-3 text-sm transition-colors hover:bg-neutral-900 hover:text-white"
         >
-          送信
+          {inquiryType === TICKET_INQUIRY ? "チケットを申し込む" : "送信"}
         </button>
       </div>
     </form>
