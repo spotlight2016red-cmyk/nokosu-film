@@ -70,6 +70,7 @@ export function ContactForm() {
             <option value="" disabled>
               お問い合わせ種別を選択
             </option>
+            <option value="チケットの申し込み">チケットの申し込み</option>
             <option value="上映について">上映について</option>
             <option value="取材・出演について">取材・出演について</option>
             <option value="スポンサー・協力について">
