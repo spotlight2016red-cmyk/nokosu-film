@@ -1,12 +1,27 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import type { FormEvent } from "react";
+import { useState, type FormEvent } from "react";
 
 const FORMSPREE_URL = "https://formspree.io/f/mojpnady";
 
+const TICKET_INQUIRY = "チケットの申し込み";
+
+const TICKET_MESSAGE_HINT = `枚数とお支払いをお書きください。
+
+・枚数
+・支払い方法(当日 or 事前決済)`;
+
 export function ContactForm() {
   const router = useRouter();
+  const [inquiryType, setInquiryType] = useState("");
+  const [message, setMessage] = useState("");
+  const [messageFocused, setMessageFocused] = useState(false);
+
+  const showTicketHint =
+    inquiryType === TICKET_INQUIRY &&
+    !message.trim() &&
+    !messageFocused;
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -64,7 +79,8 @@ export function ContactForm() {
           <select
             name="type"
             required
-            defaultValue=""
+            value={inquiryType}
+            onChange={(e) => setInquiryType(e.target.value)}
             className="w-full border-b border-neutral-300 bg-transparent pb-2 text-neutral-900 outline-none transition-colors focus:border-neutral-900"
           >
             <option value="" disabled>
@@ -84,12 +100,26 @@ export function ContactForm() {
           <label className="mb-2 block text-sm text-neutral-500">
             メッセージ
           </label>
-          <textarea
-            name="message"
-            required
-            rows={6}
-            className="w-full resize-none border border-neutral-300 bg-transparent p-4 outline-none transition-colors focus:border-neutral-900"
-          />
+          <div className="relative">
+            <textarea
+              name="message"
+              required
+              rows={6}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              onFocus={() => setMessageFocused(true)}
+              onBlur={() => setMessageFocused(false)}
+              className="relative z-10 w-full resize-none border border-neutral-300 bg-transparent p-4 outline-none transition-colors focus:border-neutral-900"
+            />
+            {showTicketHint ? (
+              <p
+                className="pointer-events-none absolute inset-0 z-20 select-none whitespace-pre-line p-4 text-sm font-light leading-relaxed text-neutral-400"
+                aria-hidden
+              >
+                {TICKET_MESSAGE_HINT}
+              </p>
+            ) : null}
+          </div>
         </div>
 
         <input
