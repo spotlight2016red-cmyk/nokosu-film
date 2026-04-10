@@ -5,25 +5,9 @@ import { useState, type FormEvent } from "react";
 
 const FORMSPREE_URL = "https://formspree.io/f/mojpnady";
 
-const TICKET_INQUIRY = "チケットの申し込み";
-
-const TICKET_MESSAGE_HINT = `チケット枚数とお支払い方法をご記入ください
-
-・枚数（例：1枚 / 2枚）
-・お支払い方法（当日 / 事前）
-
-※お申し込み後、詳細をご案内いたします。`;
-
 export function ContactForm() {
   const router = useRouter();
-  const [inquiryType, setInquiryType] = useState("");
-  const [message, setMessage] = useState("");
-  const [messageFocused, setMessageFocused] = useState(false);
-
-  const showTicketHint =
-    inquiryType === TICKET_INQUIRY &&
-    !message.trim() &&
-    !messageFocused;
+  const [purpose, setPurpose] = useState("");
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -51,77 +35,65 @@ export function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="mx-auto max-w-2xl">
-      <div className="space-y-6">
+      <div className="space-y-8">
         <div>
-          <label className="mb-2 block text-sm text-neutral-500">お名前</label>
+          <label className="mb-2 block text-base text-neutral-500">
+            お名前
+          </label>
           <input
             type="text"
             name="name"
             required
-            className="w-full border-b border-neutral-300 bg-transparent pb-2 outline-none transition-colors focus:border-neutral-900"
+            className="min-h-12 w-full border-b border-neutral-300 bg-transparent py-3 text-base outline-none transition-colors focus:border-neutral-900"
           />
         </div>
 
         <div>
-          <label className="mb-2 block text-sm text-neutral-500">
+          <label className="mb-2 block text-base text-neutral-500">
             メールアドレス
           </label>
           <input
             type="email"
             name="email"
             required
-            className="w-full border-b border-neutral-300 bg-transparent pb-2 outline-none transition-colors focus:border-neutral-900"
+            className="min-h-12 w-full border-b border-neutral-300 bg-transparent py-3 text-base outline-none transition-colors focus:border-neutral-900"
           />
         </div>
 
         <div>
-          <label className="mb-2 block text-sm text-neutral-500">
-            お問い合わせ種別
+          <label className="mb-2 block text-base text-neutral-500">
+            ご用件
           </label>
           <select
             name="type"
             required
-            value={inquiryType}
-            onChange={(e) => setInquiryType(e.target.value)}
-            className="w-full border-b border-neutral-300 bg-transparent pb-2 text-neutral-900 outline-none transition-colors focus:border-neutral-900"
+            value={purpose}
+            onChange={(e) => setPurpose(e.target.value)}
+            className="min-h-12 w-full border-b border-neutral-300 bg-transparent py-3 text-base text-neutral-900 outline-none transition-colors focus:border-neutral-900"
           >
             <option value="" disabled>
-              お問い合わせ種別を選択
+              ご用件を選択してください
             </option>
-            <option value="チケットの申し込み">チケットの申し込み</option>
-            <option value="上映について">上映について</option>
-            <option value="取材・出演について">取材・出演について</option>
-            <option value="スポンサー・協力について">
-              スポンサー・協力について
-            </option>
-            <option value="その他">その他</option>
+            <option value="上映会に申し込む">上映会に申し込む</option>
+            <option value="問い合わせをする">問い合わせをする</option>
           </select>
         </div>
 
         <div>
-          <label className="mb-2 block text-sm text-neutral-500">
+          <label className="mb-2 block text-base text-neutral-500">
             メッセージ
           </label>
-          <div className="relative">
-            <textarea
-              name="message"
-              required
-              rows={6}
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              onFocus={() => setMessageFocused(true)}
-              onBlur={() => setMessageFocused(false)}
-              className="relative z-10 w-full resize-none border border-neutral-300 bg-transparent p-4 outline-none transition-colors focus:border-neutral-900"
-            />
-            {showTicketHint ? (
-              <p
-                className="pointer-events-none absolute inset-0 z-20 select-none whitespace-pre-line p-4 text-sm font-light leading-relaxed text-neutral-400"
-                aria-hidden
-              >
-                {TICKET_MESSAGE_HINT}
-              </p>
-            ) : null}
-          </div>
+          <p className="mb-3 text-base leading-[1.85] text-neutral-600">
+            申込みの方は、参加人数をご記入ください。
+            <br />
+            お問い合わせの方は、ご質問内容をご記入ください。
+          </p>
+          <textarea
+            name="message"
+            required
+            rows={6}
+            className="w-full resize-none border border-neutral-300 bg-transparent p-4 text-base leading-[1.85] outline-none transition-colors focus:border-neutral-900"
+          />
         </div>
 
         <input
@@ -132,9 +104,9 @@ export function ContactForm() {
 
         <button
           type="submit"
-          className="border border-neutral-900 px-12 py-3 text-sm transition-colors hover:bg-neutral-900 hover:text-white"
+          className="min-h-14 border border-neutral-900 px-12 py-4 text-base font-medium transition-colors hover:bg-neutral-900 hover:text-white"
         >
-          {inquiryType === TICKET_INQUIRY ? "チケットを申し込む" : "送信"}
+          内容を送る
         </button>
       </div>
     </form>
