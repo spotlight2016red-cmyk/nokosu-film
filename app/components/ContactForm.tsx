@@ -62,7 +62,7 @@ export function ContactForm() {
 
         <div>
           <label className="mb-2 block text-lg text-neutral-500 md:text-xl">
-            ご用件
+            ご用件 (申し込み or お問い合わせ)
           </label>
           <select
             name="type"
