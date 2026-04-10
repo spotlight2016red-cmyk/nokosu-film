@@ -37,31 +37,31 @@ export function ContactForm() {
     <form onSubmit={handleSubmit} className="mx-auto max-w-2xl">
       <div className="space-y-8">
         <div>
-          <label className="mb-2 block text-base text-neutral-500">
+          <label className="mb-2 block text-lg text-neutral-500 md:text-xl">
             お名前
           </label>
           <input
             type="text"
             name="name"
             required
-            className="min-h-12 w-full border-b border-neutral-300 bg-transparent py-3 text-base outline-none transition-colors focus:border-neutral-900"
+            className="min-h-14 w-full border-b border-neutral-300 bg-transparent py-3 text-lg outline-none transition-colors focus:border-neutral-900 md:text-xl"
           />
         </div>
 
         <div>
-          <label className="mb-2 block text-base text-neutral-500">
+          <label className="mb-2 block text-lg text-neutral-500 md:text-xl">
             メールアドレス
           </label>
           <input
             type="email"
             name="email"
             required
-            className="min-h-12 w-full border-b border-neutral-300 bg-transparent py-3 text-base outline-none transition-colors focus:border-neutral-900"
+            className="min-h-14 w-full border-b border-neutral-300 bg-transparent py-3 text-lg outline-none transition-colors focus:border-neutral-900 md:text-xl"
           />
         </div>
 
         <div>
-          <label className="mb-2 block text-base text-neutral-500">
+          <label className="mb-2 block text-lg text-neutral-500 md:text-xl">
             ご用件
           </label>
           <select
@@ -69,7 +69,7 @@ export function ContactForm() {
             required
             value={purpose}
             onChange={(e) => setPurpose(e.target.value)}
-            className="min-h-12 w-full border-b border-neutral-300 bg-transparent py-3 text-base text-neutral-900 outline-none transition-colors focus:border-neutral-900"
+            className="min-h-14 w-full border-b border-neutral-300 bg-transparent py-3 text-lg text-neutral-900 outline-none transition-colors focus:border-neutral-900 md:text-xl"
           >
             <option value="" disabled>
               ご用件を選択してください
@@ -80,10 +80,10 @@ export function ContactForm() {
         </div>
 
         <div>
-          <label className="mb-2 block text-base text-neutral-500">
+          <label className="mb-2 block text-lg text-neutral-500 md:text-xl">
             メッセージ
           </label>
-          <p className="mb-3 text-base leading-[1.85] text-neutral-600">
+          <p className="mb-3 text-lg leading-[2] text-neutral-600 md:text-xl">
             申込みの方は、参加人数をご記入ください。
             <br />
             お問い合わせの方は、ご質問内容をご記入ください。
@@ -92,7 +92,7 @@ export function ContactForm() {
             name="message"
             required
             rows={6}
-            className="w-full resize-none border border-neutral-300 bg-transparent p-4 text-base leading-[1.85] outline-none transition-colors focus:border-neutral-900"
+            className="w-full resize-none border border-neutral-300 bg-transparent p-4 text-lg leading-[2] outline-none transition-colors focus:border-neutral-900 md:text-xl"
           />
         </div>
 
@@ -104,7 +104,7 @@ export function ContactForm() {
 
         <button
           type="submit"
-          className="min-h-14 border border-neutral-900 px-12 py-4 text-base font-medium transition-colors hover:bg-neutral-900 hover:text-white"
+          className="min-h-16 border border-neutral-900 px-12 py-5 text-lg font-medium transition-colors hover:bg-neutral-900 hover:text-white md:text-xl"
         >
           内容を送る
         </button>
