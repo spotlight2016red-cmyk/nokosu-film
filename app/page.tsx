@@ -297,40 +297,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Interview Section */}
-      <section className="border-t border-neutral-200 px-6 py-24 md:py-32 max-w-4xl mx-auto">
+      {/* Interview — 常に2列で下へ積み上がる。16:9 + object-cover で横の黒帯を切り、枠を塗りつぶす */}
+      <section className="border-t border-neutral-200 px-6 py-24 md:py-32 max-w-5xl mx-auto">
         <h2 className="mb-10 text-lg tracking-[0.2em] text-neutral-500 md:text-xl md:mb-14">
           INTERVIEW
         </h2>
-        <div className="grid gap-12 sm:grid-cols-2 xl:grid-cols-4">
-          <div>
-            <img
-              src="/interview1.png"
-              alt="インタビューの様子 1"
-              className="w-full h-[320px] object-cover rounded-sm"
-            />
-          </div>
-          <div>
-            <img
-              src="/interview2.png"
-              alt="インタビューの様子 2"
-              className="w-full h-[320px] object-cover rounded-sm"
-            />
-          </div>
-          <div>
-            <img
-              src="/interview3.png"
-              alt="インタビューの様子 3"
-              className="w-full h-[320px] object-cover rounded-sm"
-            />
-          </div>
-          <div>
-            <img
-              src="/interview4.png"
-              alt="中津峰山如意輪寺 住職 山田弘乘さまのインタビュー"
-              className="w-full h-[320px] object-cover rounded-sm"
-            />
-          </div>
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-x-10 sm:gap-y-12">
+          {/* 並び: 左上=3 / 右上=2 / 左下=1 / 右下=4 */}
+          <InterviewPhoto src="/interview3.png" alt="インタビューの様子 3" />
+          <InterviewPhoto src="/interview2.png" alt="インタビューの様子 2" />
+          <InterviewPhoto src="/interview1.png" alt="インタビューの様子 1" />
+          <InterviewPhoto
+            src="/interview4.png"
+            alt="中津峰山如意輪寺 住職 山田弘乘さまのインタビュー"
+          />
         </div>
       </section>
 
@@ -422,6 +402,20 @@ export default function Home() {
       <footer className="border-t border-neutral-200 px-6 py-16 text-center text-lg text-neutral-500 md:text-xl">
         <p>© 2026 「残すということ」映画製作準備委員会</p>
       </footer>
+    </div>
+  );
+}
+
+function InterviewPhoto({ src, alt }: { src: string; alt: string }) {
+  return (
+    <div className="aspect-video w-full overflow-hidden rounded-sm bg-neutral-900">
+      <img
+        src={src}
+        alt={alt}
+        className="h-full w-full object-cover object-center"
+        loading="lazy"
+        decoding="async"
+      />
     </div>
   );
 }
