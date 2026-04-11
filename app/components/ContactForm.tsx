@@ -35,7 +35,7 @@ export function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="mx-auto max-w-2xl">
-      <div className="space-y-8">
+      <div className="space-y-10 md:space-y-9">
         <div>
           <label className="mb-2 block text-lg text-neutral-500 md:text-xl">
             お名前
@@ -104,7 +104,7 @@ export function ContactForm() {
 
         <button
           type="submit"
-          className="min-h-16 border border-neutral-900 px-12 py-5 text-lg font-medium transition-colors hover:bg-neutral-900 hover:text-white md:text-xl"
+          className="mx-auto mt-2 block min-h-16 w-full max-w-md touch-manipulation border border-neutral-900 px-12 py-5 text-center text-lg font-medium shadow-sm transition-colors hover:bg-neutral-900 hover:text-white md:text-xl"
         >
           内容を送る
         </button>

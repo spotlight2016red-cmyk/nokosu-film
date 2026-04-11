@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="size-full bg-white text-neutral-900">
       {/* Hero Section */}
-      <section className="relative flex min-h-screen items-center justify-center py-16 md:py-24">
+      <section className="relative flex min-h-screen items-center justify-center py-20 md:py-24">
         <Image
           src="/hero.jpg"
           alt="Documentary Hero"
@@ -15,24 +15,30 @@ export default function Home() {
           className="object-cover scale-105"
         />
         <div className="absolute inset-0 bg-black/30" />
-        <div className="relative z-10 mx-auto w-full max-w-2xl px-6 text-center text-white">
+        <div className="relative z-10 mx-auto w-full max-w-2xl px-5 text-center text-white sm:px-6">
           <h1
-            className="mb-6 text-5xl tracking-wider md:text-7xl lg:text-8xl"
+            className="mb-5 text-5xl tracking-wider md:mb-6 md:text-7xl lg:text-8xl"
             style={{ fontWeight: 300 }}
           >
             残すということ
           </h1>
           <p
-            className="mb-6 text-xl leading-[1.9] tracking-wide md:text-3xl md:leading-relaxed"
+            className="mb-5 text-xl leading-[1.9] tracking-wide md:mb-6 md:text-3xl md:leading-relaxed"
             style={{ fontWeight: 300 }}
           >
             人は、何を未来に残して生きるのか。
           </p>
-          <p className="mb-10 text-lg tracking-widest opacity-90 md:text-xl">
+          <p
+            className="mx-auto mb-6 max-w-md text-base leading-[1.95] text-white/90 md:mb-8 md:max-w-lg md:text-lg"
+            style={{ fontWeight: 300 }}
+          >
+            これは、ただの映画上映ではなく、何を大切に生きていくのかを見つめる時間です。
+          </p>
+          <p className="mb-8 text-lg tracking-widest opacity-90 md:mb-10 md:text-xl">
             DOCUMENTARY FILM / IN PRODUCTION
           </p>
 
-          <div className="rounded-2xl border border-white/20 bg-white/92 px-6 py-8 text-neutral-900 shadow-lg backdrop-blur-sm">
+          <div className="rounded-2xl border border-white/20 bg-white/92 px-5 py-9 text-neutral-900 shadow-lg backdrop-blur-sm sm:px-8 sm:py-10">
             <p className="mb-4 text-lg font-medium tracking-wide text-neutral-600 md:text-xl">
               上映会開催
             </p>
@@ -45,9 +51,15 @@ export default function Home() {
             <p className="mb-8 text-xl font-semibold text-neutral-900 md:text-2xl">
               参加費：1,500円
             </p>
-            <div className="flex flex-col items-center gap-4">
-              <ApplyScreeningButton className="w-full sm:max-w-md" />
-              <p className="max-w-md text-center text-lg leading-relaxed text-neutral-600 md:text-xl">
+            <div className="flex flex-col items-center gap-5 sm:gap-6">
+              <p className="text-lg font-medium leading-snug text-neutral-800 md:text-xl">
+                上映会の詳細・お申し込みはこちら
+              </p>
+              <ApplyScreeningButton className="w-full sm:max-w-md" emphasis />
+              <p className="max-w-md text-center text-base leading-[1.95] text-neutral-600 md:text-lg">
+                当日現地にてお支払いとなりますので、お気軽にお申し込みください。
+              </p>
+              <p className="max-w-md text-center text-base leading-relaxed text-neutral-500 md:text-lg">
                 ※店頭チケットでもお申込みいただけます
               </p>
             </div>
@@ -56,12 +68,12 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="px-6 py-24 md:py-32 max-w-4xl mx-auto">
-        <h2 className="mb-10 text-lg tracking-[0.2em] text-neutral-500 md:text-xl md:mb-14">
+      <section className="mx-auto max-w-4xl px-6 py-28 md:py-32">
+        <h2 className="mb-9 text-lg tracking-[0.2em] text-neutral-500 md:mb-14 md:text-xl">
           ABOUT
         </h2>
         <div
-          className="space-y-8 text-lg leading-[2] text-neutral-800 md:text-xl md:leading-[2]"
+          className="space-y-7 text-lg leading-[2] text-neutral-800 md:space-y-8 md:text-xl md:leading-[2]"
           style={{ fontWeight: 300 }}
         >
           <p>祖父たちは川を整え、桜並木を植え、未来に風景を残した。</p>
@@ -74,12 +86,12 @@ export default function Home() {
       </section>
 
       {/* Audience Section */}
-      <section className="border-t border-neutral-200 px-6 py-24 md:py-32 max-w-4xl mx-auto">
-        <h2 className="mb-10 text-lg tracking-[0.2em] text-neutral-500 md:text-xl md:mb-12">
+      <section className="mx-auto max-w-4xl border-t border-neutral-200 px-6 py-28 md:py-32">
+        <h2 className="mb-9 text-lg tracking-[0.2em] text-neutral-500 md:mb-12 md:text-xl">
           こんな方に届けたい
         </h2>
         <ul
-          className="list-none space-y-4 pl-0 text-lg leading-[2] text-neutral-800 md:text-xl"
+          className="list-none space-y-5 pl-0 text-lg leading-[2] text-neutral-800 md:space-y-4 md:text-xl"
           style={{ fontWeight: 300 }}
         >
           <li>・地域に残ってきた営みや文化に関心のある方</li>
@@ -90,12 +102,12 @@ export default function Home() {
       </section>
 
       {/* Director's Note Section */}
-      <section className="border-t border-neutral-200 px-6 py-24 md:py-32 max-w-4xl mx-auto">
-        <h2 className="mb-10 text-lg tracking-[0.2em] text-neutral-500 md:text-xl md:mb-14">
+      <section className="mx-auto max-w-4xl border-t border-neutral-200 px-6 py-28 md:py-32">
+        <h2 className="mb-9 text-lg tracking-[0.2em] text-neutral-500 md:mb-14 md:text-xl">
           DIRECTOR&apos;S NOTE
         </h2>
         <div
-          className="space-y-8 text-lg leading-[2] text-neutral-800 md:text-xl md:leading-[2]"
+          className="space-y-7 text-lg leading-[2] text-neutral-800 md:space-y-8 md:text-xl md:leading-[2]"
           style={{ fontWeight: 300 }}
         >
           <p>
@@ -121,11 +133,11 @@ export default function Home() {
       {/* Screening overview + store tickets */}
       <section
         id="screening"
-        className="border-t border-neutral-200 bg-neutral-50/80 px-6 py-24 md:py-32"
+        className="border-t border-neutral-200 bg-neutral-50/80 px-6 py-28 md:py-32"
       >
         <div className="mx-auto max-w-4xl space-y-14">
           <div>
-            <h2 className="mb-10 text-lg tracking-[0.2em] text-neutral-500 md:text-xl md:mb-12">
+            <h2 className="mb-9 text-lg tracking-[0.2em] text-neutral-500 md:mb-12 md:text-xl">
               上映会概要
             </h2>
             <div
@@ -155,9 +167,15 @@ export default function Home() {
                 ドキュメンタリー映画上映、上映後トーク（予定）
               </p>
             </div>
-            <div className="mt-10 flex flex-col items-center gap-6">
-              <ApplyScreeningButton />
-              <p className="max-w-xl text-center text-lg leading-[2] text-neutral-600 md:text-xl">
+            <div className="mt-12 flex flex-col items-center gap-6 sm:mt-14">
+              <p className="text-center text-lg font-medium text-neutral-800 md:text-xl">
+                この時間に参加したい方はこちら
+              </p>
+              <ApplyScreeningButton emphasis />
+              <p className="max-w-xl text-center text-base leading-[2] text-neutral-600 md:text-lg">
+                当日現地にてお支払いとなりますので、お気軽にお申し込みください。
+              </p>
+              <p className="max-w-xl text-center text-base leading-[2] text-neutral-500 md:text-lg">
                 スマホが苦手な方は、店頭チケットでもお申込みいただけます。
               </p>
             </div>
@@ -182,8 +200,8 @@ export default function Home() {
       </section>
 
       {/* Film Information Section */}
-      <section className="px-6 py-24 md:py-32 max-w-4xl mx-auto border-t border-neutral-200">
-        <h2 className="mb-10 text-lg tracking-[0.2em] text-neutral-500 md:text-xl md:mb-14">
+      <section className="mx-auto max-w-4xl border-t border-neutral-200 px-6 py-28 md:py-32">
+        <h2 className="mb-9 text-lg tracking-[0.2em] text-neutral-500 md:mb-14 md:text-xl">
           FILM INFORMATION
         </h2>
         <div className="space-y-6 text-lg md:text-xl" style={{ fontWeight: 300 }}>
@@ -195,8 +213,8 @@ export default function Home() {
           <InfoRow label="製作状況" value="製作中" />
         </div>
       </section>
-      <section className="px-6 py-24 md:py-32 max-w-5xl mx-auto">
-        <h2 className="mb-8 text-lg tracking-[0.2em] text-neutral-500 md:text-xl md:mb-10">
+      <section className="mx-auto max-w-5xl px-6 py-28 md:py-32">
+        <h2 className="mb-8 text-lg tracking-[0.2em] text-neutral-500 md:mb-10 md:text-xl">
           VISUAL
         </h2>
         <p
@@ -266,8 +284,8 @@ export default function Home() {
         </div>
       </section>
       {/* News Section */}
-      <section className="border-t border-neutral-200 px-6 py-24 md:py-32 max-w-4xl mx-auto">
-        <h2 className="mb-10 text-lg tracking-[0.2em] text-neutral-500 md:text-xl md:mb-14">
+      <section className="mx-auto max-w-4xl border-t border-neutral-200 px-6 py-28 md:py-32">
+        <h2 className="mb-9 text-lg tracking-[0.2em] text-neutral-500 md:mb-14 md:text-xl">
           NEWS
         </h2>
         <div className="space-y-8" style={{ fontWeight: 300 }}>
@@ -298,8 +316,8 @@ export default function Home() {
       </section>
 
       {/* Interview — 常に2列で下へ積み上がる。16:9 + object-cover で横の黒帯を切り、枠を塗りつぶす */}
-      <section className="border-t border-neutral-200 px-6 py-24 md:py-32 max-w-5xl mx-auto">
-        <h2 className="mb-10 text-lg tracking-[0.2em] text-neutral-500 md:text-xl md:mb-14">
+      <section className="mx-auto max-w-5xl border-t border-neutral-200 px-6 py-28 md:py-32">
+        <h2 className="mb-9 text-lg tracking-[0.2em] text-neutral-500 md:mb-14 md:text-xl">
           INTERVIEW
         </h2>
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-x-10 sm:gap-y-12">
@@ -315,12 +333,12 @@ export default function Home() {
       </section>
 
       {/* Support Section */}
-      <section className="border-t border-neutral-200 px-6 py-24 md:py-32 max-w-4xl mx-auto">
-        <h2 className="mb-10 text-lg tracking-[0.2em] text-neutral-500 md:text-xl md:mb-14">
+      <section className="mx-auto max-w-4xl border-t border-neutral-200 px-6 py-28 md:py-32">
+        <h2 className="mb-9 text-lg tracking-[0.2em] text-neutral-500 md:mb-14 md:text-xl">
           SUPPORT
         </h2>
         <div
-          className="space-y-8 text-lg leading-[2] text-neutral-800 md:text-xl"
+          className="space-y-7 text-lg leading-[2] text-neutral-800 md:space-y-8 md:text-xl"
           style={{ fontWeight: 300 }}
         >
           <p>
@@ -340,29 +358,35 @@ export default function Home() {
 
       <section
         id="contact"
-        className="border-t border-neutral-200 px-6 py-24 md:py-32 max-w-4xl mx-auto"
+        className="mx-auto max-w-4xl scroll-mt-6 border-t border-neutral-200 px-6 py-28 md:py-32"
       >
-        <h2 className="mb-6 text-lg tracking-[0.2em] text-neutral-500 md:text-xl md:mb-8">
+        <h2 className="mb-7 text-lg tracking-[0.2em] text-neutral-500 md:mb-9 md:text-xl">
           上映会のお申込み・お問い合わせ
         </h2>
         <p
-          className="mb-12 max-w-2xl text-lg leading-[2] text-neutral-700 md:text-xl"
+          className="mb-5 max-w-2xl text-lg leading-[2] text-neutral-700 md:text-xl"
           style={{ fontWeight: 300 }}
         >
           上映会へのご参加希望の方は、必要事項をご記入のうえお申し込みください。
           <br />
           ご不明点のある方も、こちらからお問い合わせいただけます。
         </p>
+        <p
+          className="mb-12 max-w-2xl text-base leading-[2] text-neutral-600 md:text-lg"
+          style={{ fontWeight: 300 }}
+        >
+          事前のお支払いは不要です。当日会場にて参加費をお支払いください。お申し込みはご連絡いただくだけで結構です。
+        </p>
         <ContactForm />
       </section>
 
       {/* FAQ */}
-      <section className="border-t border-neutral-200 bg-neutral-50/50 px-6 py-24 md:py-32">
+      <section className="border-t border-neutral-200 bg-neutral-50/50 px-6 py-28 md:py-32">
         <div className="mx-auto max-w-4xl">
-          <h2 className="mb-10 text-lg tracking-[0.2em] text-neutral-500 md:text-xl md:mb-12">
+          <h2 className="mb-9 text-lg tracking-[0.2em] text-neutral-500 md:mb-12 md:text-xl">
             よくあるご質問
           </h2>
-          <dl className="space-y-10">
+          <dl className="space-y-9 md:space-y-10">
             <FaqItem
               q="ひとりでも参加できますか？"
               a="はい、おひとりで参加される方もいらっしゃいます。安心してお越しください。"
@@ -383,23 +407,32 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Closing CTA */}
-      <section className="border-t border-neutral-200 px-6 py-24 md:py-32">
+      {/* Closing CTA（3箇所目：ページ下部） */}
+      <section className="border-t border-neutral-200 px-6 py-28 md:py-32">
         <div className="mx-auto max-w-2xl text-center">
           <p
-            className="mb-12 text-lg leading-[2.05] text-neutral-800 md:text-xl md:leading-[2.05]"
+            className="mb-6 text-lg leading-[2.05] text-neutral-800 md:text-xl md:leading-[2.05]"
+            style={{ fontWeight: 300 }}
+          >
+            映画を観る時間にとどまらず、未来へ何を残していくのかを感じ、考える時間になればと思っています。
+          </p>
+          <p
+            className="mb-10 text-lg leading-[2.05] text-neutral-800 md:mb-12 md:text-xl md:leading-[2.05]"
             style={{ fontWeight: 300 }}
           >
             受け取ってきたものに、あらためて光を当てる時間。
             <br />
             この映画が、あなた自身の「残すということ」を見つめるきっかけになれば嬉しいです。
           </p>
-          <ApplyScreeningButton />
+          <p className="mb-5 text-lg font-medium text-neutral-800 md:text-xl">
+            上映会への参加はこちら
+          </p>
+          <ApplyScreeningButton emphasis />
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-neutral-200 px-6 py-16 text-center text-lg text-neutral-500 md:text-xl">
+      <footer className="border-t border-neutral-200 px-6 py-14 text-center text-lg text-neutral-500 md:py-16 md:text-xl">
         <p>© 2026 「残すということ」映画製作準備委員会</p>
       </footer>
     </div>
@@ -420,14 +453,24 @@ function InterviewPhoto({ src, alt }: { src: string; alt: string }) {
   );
 }
 
-function ApplyScreeningButton({ className = "" }: { className?: string }) {
+function ApplyScreeningButton({
+  className = "",
+  emphasis = false,
+}: {
+  className?: string;
+  emphasis?: boolean;
+}) {
   return (
     <a
       href="#contact"
       className={
-        "inline-flex min-h-16 w-full max-w-md items-center justify-center rounded-full " +
-        "bg-neutral-900 px-8 py-5 text-lg font-medium tracking-wide text-white shadow-sm " +
-        "transition-colors hover:bg-neutral-800 sm:mx-auto " +
+        "inline-flex min-h-[3.75rem] w-full max-w-md touch-manipulation items-center justify-center " +
+        "rounded-full bg-neutral-900 px-8 py-5 text-lg font-medium tracking-wide text-white " +
+        "shadow-[0_4px_18px_rgba(0,0,0,0.18)] ring-2 ring-neutral-900/20 transition-[transform,box-shadow,background-color] " +
+        "hover:bg-neutral-800 hover:shadow-[0_6px_22px_rgba(0,0,0,0.22)] active:scale-[0.99] sm:mx-auto " +
+        (emphasis
+          ? "sm:min-h-[4rem] sm:px-10 sm:text-xl sm:ring-neutral-800/25 "
+          : "") +
         className
       }
     >
