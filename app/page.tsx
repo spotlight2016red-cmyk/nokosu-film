@@ -57,10 +57,13 @@ export default function Home() {
               </p>
               <ApplyScreeningButton className="w-full sm:max-w-md" emphasis />
               <p className="max-w-md text-center text-base leading-[1.95] text-neutral-600 md:text-lg">
-                当日現地にてお支払いとなりますので、お気軽にお申し込みください。
+                お支払いは、当日現金払い・事前決済のどちらにも対応予定です。
               </p>
               <p className="max-w-md text-center text-base leading-relaxed text-neutral-500 md:text-lg">
-                ※店頭チケットでもお申込みいただけます
+                スマホが苦手な方は、店頭チケットでもお申し込みいただけます。
+              </p>
+              <p className="max-w-md text-center text-sm leading-relaxed text-neutral-500 md:text-base">
+                事前決済をご希望の方は、お申し込み時にメッセージ欄へご記入ください。
               </p>
             </div>
           </div>
@@ -163,6 +166,17 @@ export default function Home() {
                 <span className="font-semibold text-neutral-900">参加費：</span>
                 <span className="font-medium text-neutral-900">1,500円</span>
               </p>
+              <p>
+                <span className="font-semibold text-neutral-900">
+                  お支払い方法：
+                </span>
+                <span className="font-medium text-neutral-900">
+                  当日現金払い／事前決済
+                </span>
+              </p>
+              <p className="text-neutral-700">
+                店頭チケットでのお申し込みも可能です。
+              </p>
               <p className="text-neutral-700">
                 ドキュメンタリー映画上映、上映後トーク（予定）
               </p>
@@ -173,7 +187,7 @@ export default function Home() {
               </p>
               <ApplyScreeningButton emphasis />
               <p className="max-w-xl text-center text-base leading-[2] text-neutral-600 md:text-lg">
-                当日現地にてお支払いとなりますので、お気軽にお申し込みください。
+                お支払いは、当日現金払い／事前決済のどちらにも対応予定です。
               </p>
               <p className="max-w-xl text-center text-base leading-[2] text-neutral-500 md:text-lg">
                 スマホが苦手な方は、店頭チケットでもお申込みいただけます。
@@ -352,6 +366,15 @@ export default function Home() {
             <li>・協賛</li>
             <li>・スポンサー</li>
           </ul>
+          <div className="space-y-4 text-neutral-700">
+            <p>個人の方からも、活動へのご協賛を受け付けています。</p>
+            <p>
+              いただいたご支援は、上映会運営費、ゲスト謝礼、今後の映像制作・上映活動に大切に活用させていただきます。
+            </p>
+            <p>
+              すでに個人協賛をいただいております。匿名希望のためお名前は伏せさせていただきますが、心より感謝申し上げます。
+            </p>
+          </div>
           <p>詳細はお問い合わせください。</p>
         </div>
       </section>
@@ -375,7 +398,11 @@ export default function Home() {
           className="mb-12 max-w-2xl text-base leading-[2] text-neutral-600 md:text-lg"
           style={{ fontWeight: 300 }}
         >
-          事前のお支払いは不要です。当日会場にて参加費をお支払いください。お申し込みはご連絡いただくだけで結構です。
+          お申し込み後、当日現金払いまたは事前決済にてご参加いただけます。
+          <br />
+          事前決済をご希望の方には、別途ご案内いたします。
+          <br />
+          店頭チケットでのお申し込みも可能です。
         </p>
         <ContactForm />
       </section>

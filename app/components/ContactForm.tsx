@@ -87,6 +87,8 @@ export function ContactForm() {
             申込みの方は、参加人数をご記入ください。
             <br />
             お問い合わせの方は、ご質問内容をご記入ください。
+            <br />
+            事前決済をご希望の方は、その旨もご記入ください。
           </p>
           <textarea
             name="message"
