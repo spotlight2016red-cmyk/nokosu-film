@@ -17,7 +17,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 mx-auto w-full max-w-2xl px-5 text-center text-white sm:px-6">
           <h1
-            className="mb-5 text-5xl tracking-wider md:mb-6 md:text-7xl lg:text-8xl"
+            className="mb-5 text-4xl tracking-wide sm:text-5xl sm:tracking-wider md:mb-6 md:text-7xl md:tracking-wider lg:text-8xl"
             style={{ fontWeight: 300 }}
           >
             残すということ
