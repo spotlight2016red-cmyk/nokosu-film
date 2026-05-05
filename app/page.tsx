@@ -307,9 +307,16 @@ export default function Home() {
             <p>映画製作準備委員会を設立予定</p>
           </NewsRow>
           <NewsRow date="2026.04">
-            <p className="mb-4">4月7日 インタビュー撮影</p>
+            <p className="mb-4">4月15日 インタビュー撮影</p>
             <ul className="list-none space-y-3 pl-0 text-lg leading-relaxed text-neutral-700 md:text-xl">
               <li>・中津峰山如意輪寺 住職：山田 弘乘さま</li>
+              <li>
+                ・一般社団法人 かみかつ森林環境公社
+                <br />
+                <span className="inline-block pl-[1.1em]">
+                  代表理事：西 利一さま
+                </span>
+              </li>
             </ul>
           </NewsRow>
           <NewsRow date="2026.03">
@@ -335,13 +342,17 @@ export default function Home() {
           INTERVIEW
         </h2>
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-x-10 sm:gap-y-12">
-          {/* 並び: 左上=3 / 右上=2 / 左下=1 / 右下=4 */}
+          {/* 並び: 左上=3 / 右上=2 / 左下=1 / 右下=4 / その次=5 */}
           <InterviewPhoto src="/interview3.png" alt="インタビューの様子 3" />
           <InterviewPhoto src="/interview2.png" alt="インタビューの様子 2" />
           <InterviewPhoto src="/interview1.png" alt="インタビューの様子 1" />
           <InterviewPhoto
             src="/interview4.png"
             alt="中津峰山如意輪寺 住職 山田弘乘さまのインタビュー"
+          />
+          <InterviewPhoto
+            src="/interview5.png"
+            alt="一般社団法人 かみかつ森林環境公社 代表理事 西 利一さまのインタビュー"
           />
         </div>
       </section>
