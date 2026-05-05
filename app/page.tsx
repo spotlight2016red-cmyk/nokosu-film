@@ -307,17 +307,26 @@ export default function Home() {
             <p>映画製作準備委員会を設立予定</p>
           </NewsRow>
           <NewsRow date="2026.04">
-            <p className="mb-4">4月15日 インタビュー撮影</p>
-            <ul className="list-none space-y-3 pl-0 text-lg leading-relaxed text-neutral-700 md:text-xl">
-              <li>・中津峰山如意輪寺 住職：山田 弘乘さま</li>
-              <li>
-                ・一般社団法人 かみかつ森林環境公社
-                <br />
-                <span className="inline-block pl-[1.1em]">
-                  代表理事：西 利一さま
-                </span>
-              </li>
-            </ul>
+            <div className="space-y-8">
+              <div>
+                <p className="mb-4">4月7日 インタビュー撮影</p>
+                <ul className="list-none space-y-3 pl-0 text-lg leading-relaxed text-neutral-700 md:text-xl">
+                  <li>・中津峰山如意輪寺 住職：山田 弘乘さま</li>
+                </ul>
+              </div>
+              <div>
+                <p className="mb-4">4月15日 インタビュー撮影</p>
+                <ul className="list-none space-y-3 pl-0 text-lg leading-relaxed text-neutral-700 md:text-xl">
+                  <li>
+                    ・一般社団法人 かみかつ森林環境公社
+                    <br />
+                    <span className="inline-block pl-[1.1em]">
+                      代表理事：西 利一さま
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </NewsRow>
           <NewsRow date="2026.03">
             <p className="mb-4">インタビュー撮影開始</p>
