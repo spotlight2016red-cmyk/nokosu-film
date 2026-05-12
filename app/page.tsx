@@ -210,6 +210,53 @@ export default function Home() {
               <p>スマホ操作が苦手な方も、お気軽にご利用ください。</p>
             </div>
           </div>
+
+          <div className="border-t border-neutral-200 pt-14">
+            <h3 className="mb-6 text-xl font-medium tracking-wide text-neutral-900 md:text-2xl">
+              当日の上映会の司会が決定！
+            </h3>
+            <p
+              className="mb-10 text-lg leading-[2] text-neutral-800 md:text-xl"
+              style={{ fontWeight: 300 }}
+            >
+              5月30日開催の映画上映会では、
+              <br />
+              同級生であり、フリーアナウンサーとして活動している松本 由里子さんに司会をお願いする予定です。
+            </p>
+            <div className="flex flex-col gap-10 md:flex-row md:items-start md:gap-12">
+              <div className="mx-auto w-full max-w-xs shrink-0 md:mx-0">
+                <img
+                  src="/mc-matsumoto-yuriko.png"
+                  alt="フリーアナウンサー 松本由里子さん"
+                  className="aspect-[3/4] w-full rounded-sm object-cover object-center"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div
+                className="min-w-0 space-y-5 text-lg leading-[2] text-neutral-800 md:text-xl"
+                style={{ fontWeight: 300 }}
+              >
+                <div>
+                  <p className="text-xl font-medium text-neutral-900 md:text-2xl">
+                    松本由里子さん
+                  </p>
+                  <p className="mt-1 text-neutral-600">フリーアナウンサー</p>
+                </div>
+                <p>
+                  短期大学卒業後、テレビリポーターとして四国放送やケーブルテレビの情報番組に出演。
+                </p>
+                <p>
+                  コンサート、式典、イベント等の司会を務め、最近では岩脇桜まつり、阿南の夏祭り、アミコドーム阿波おどりフェスタのMCを担当。
+                </p>
+                <p>
+                  勝浦町では、Standup！企画 パリ五輪女子バスケ予選「日本 vs
+                  ドイツ戦」パブリックビューイング会場MCも務める。
+                </p>
+                <p>現在は自身のYouTubeも更新中。</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -304,7 +351,15 @@ export default function Home() {
         </h2>
         <div className="space-y-8" style={{ fontWeight: 300 }}>
           <NewsRow date="2026.05">
-            <p>映画製作準備委員会を設立予定</p>
+            <div className="space-y-8">
+              <div>
+                <p className="mb-4">当日の上映会の司会が決定！</p>
+                <p className="text-lg leading-relaxed text-neutral-700">
+                  5月30日開催の映画上映会では、同級生であり、フリーアナウンサーとして活動している松本 由里子さんに司会をお願いする予定です。
+                </p>
+              </div>
+              <p>映画製作準備委員会を設立予定</p>
+            </div>
           </NewsRow>
           <NewsRow date="2026.04">
             <div className="space-y-8">
