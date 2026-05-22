@@ -376,13 +376,6 @@ export default function Home() {
                 <p className="text-lg leading-relaxed text-neutral-700">
                   ラストを飾っていただきます！
                 </p>
-                <img
-                  src="/yakkoren.jpg"
-                  alt="勝浦町 やっこ連の阿波おどり"
-                  className="mt-6 w-full max-w-2xl rounded-sm object-cover object-center"
-                  loading="lazy"
-                  decoding="async"
-                />
               </div>
               <div>
                 <p className="mb-4">当日の上映会の司会が決定！</p>
