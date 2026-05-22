@@ -104,12 +104,17 @@ export function ContactForm() {
           value="映画LPからお問い合わせが届きました"
         />
 
-        <button
-          type="submit"
-          className="mx-auto mt-2 block min-h-16 w-full max-w-md touch-manipulation border border-neutral-900 px-12 py-5 text-center text-lg font-medium shadow-sm transition-colors hover:bg-neutral-900 hover:text-white md:text-xl"
-        >
-          内容を送る
-        </button>
+        <div className="pt-4">
+          <p className="mb-6 text-center text-lg leading-relaxed text-neutral-600 md:text-xl">
+            入力内容をご確認のうえ、下のボタンを押してください。
+          </p>
+          <button
+            type="submit"
+            className="mx-auto block min-h-[3.75rem] w-full touch-manipulation rounded-xl bg-neutral-900 px-8 py-5 text-center text-lg font-medium text-white shadow-md transition-colors hover:bg-neutral-800 active:bg-neutral-950 md:min-h-20 md:text-xl"
+          >
+            申し込みを確定する
+          </button>
+        </div>
       </div>
     </form>
   );
