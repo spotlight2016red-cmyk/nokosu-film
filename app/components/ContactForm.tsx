@@ -110,7 +110,7 @@ export function ContactForm() {
           </p>
           <button
             type="submit"
-            className="mx-auto block min-h-[3.75rem] w-full touch-manipulation rounded-xl bg-neutral-900 px-8 py-5 text-center text-lg font-medium text-white shadow-md transition-colors hover:bg-neutral-800 active:bg-neutral-950 md:min-h-20 md:text-xl"
+            className="mx-auto block min-h-[3.75rem] w-full touch-manipulation rounded-xl bg-amber-400 px-8 py-5 text-center text-lg font-semibold text-neutral-900 shadow-[0_4px_18px_rgba(245,158,11,0.35)] ring-2 ring-amber-500/50 transition-colors hover:bg-amber-500 active:bg-amber-600 md:min-h-20 md:text-xl"
           >
             申し込みを確定する
           </button>
