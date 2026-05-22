@@ -257,6 +257,25 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <div className="border-t border-neutral-200 pt-14">
+            <h3 className="mb-6 text-xl font-medium tracking-wide text-neutral-900 md:text-2xl">
+              勝浦町の、やっこ連の参加決定！
+            </h3>
+            <p
+              className="mb-10 text-lg leading-[2] text-neutral-800 md:text-xl"
+              style={{ fontWeight: 300 }}
+            >
+              ラストを飾っていただきます！
+            </p>
+            <img
+              src="/yakkoren.jpg"
+              alt="勝浦町 やっこ連の阿波おどり"
+              className="w-full max-w-3xl rounded-sm object-cover object-center"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
         </div>
       </section>
 
@@ -352,6 +371,19 @@ export default function Home() {
         <div className="space-y-8" style={{ fontWeight: 300 }}>
           <NewsRow date="2026.05">
             <div className="space-y-8">
+              <div>
+                <p className="mb-4">勝浦町の、やっこ連の参加決定！</p>
+                <p className="text-lg leading-relaxed text-neutral-700">
+                  ラストを飾っていただきます！
+                </p>
+                <img
+                  src="/yakkoren.jpg"
+                  alt="勝浦町 やっこ連の阿波おどり"
+                  className="mt-6 w-full max-w-2xl rounded-sm object-cover object-center"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
               <div>
                 <p className="mb-4">当日の上映会の司会が決定！</p>
                 <p className="text-lg leading-relaxed text-neutral-700">
