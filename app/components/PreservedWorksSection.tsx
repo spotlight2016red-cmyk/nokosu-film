@@ -1,18 +1,18 @@
 const PRESERVED_WORKS = [
   {
-    title: "勝浦町 ロマン街道＆ビッグひな祭り",
+    title: "ロマン街道＆ビッグひな祭り（勝浦町）",
     description:
       "勝浦町に根づく人形文化と、地域の人たちの想いを記録しました。",
     youtubeUrl: "https://youtu.be/N7G_lnAHcrA",
   },
   {
-    title: "藍の館（藍染）",
+    title: "藍染 藍の館（藍住町）",
     description:
       "徳島に受け継がれてきた藍の文化と、手仕事に込められた記憶を記録しました。",
     youtubeUrl: "https://youtu.be/1pVHBHQjCzU",
   },
   {
-    title: "丹波篠山デカンショ節",
+    title: "丹波篠山デカンショ節（丹波篠山市）",
     description:
       "土地に歌い継がれてきた民謡と、人々のつながりを記録しました。",
     youtubeUrl: "https://youtu.be/ctAVYIkGtkU",
@@ -68,7 +68,7 @@ export function PreservedWorksSection() {
                   youtubeUrl={work.youtubeUrl}
                 />
                 <div className="flex flex-1 flex-col px-6 py-8 md:px-7 md:py-9">
-                  <h3 className="mb-4 text-xl font-medium leading-snug tracking-wide text-neutral-900 md:text-[1.35rem]">
+                  <h3 className="mb-4 text-xl font-bold leading-snug tracking-wide text-neutral-900 md:text-[1.35rem]">
                     {work.title}
                   </h3>
                   <p
