@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import Image from "next/image";
 import { ContactForm } from "./components/ContactForm";
+import { PreservedWorksSection } from "./components/PreservedWorksSection";
 
 export default function Home() {
   return (
@@ -363,6 +364,9 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      <PreservedWorksSection />
+
       {/* News Section */}
       <section className="mx-auto max-w-4xl border-t border-neutral-200 px-6 py-28 md:py-32">
         <h2 className="mb-9 text-lg tracking-[0.2em] text-neutral-500 md:mb-14 md:text-xl">
