@@ -349,8 +349,11 @@ export default function Home() {
               style={{ fontWeight: 300 }}
             >
               <p className="text-lg leading-[2.15] text-neutral-700 md:text-xl md:leading-[2.25]">
-                「顔も知らない先人の方々の想いと、今を生きる私たちの想いがひとつになる瞬間がある」
+                1人1人取り組んでいることは異なるものの、根底にある思いは同じであることがとても伝わってきて、「残すこと」について改めて考えることのできる大変有意義な時間となりました。
               </p>
+              <footer className="mt-5 text-base tracking-wide text-neutral-400 md:text-lg">
+                20代 / 女性
+              </footer>
             </blockquote>
             <blockquote
               className="border-l border-neutral-300/80 py-1 pl-8 md:pl-10"
