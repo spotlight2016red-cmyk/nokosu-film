@@ -386,6 +386,39 @@ export default function Home() {
               </footer>
             </blockquote>
           </div>
+
+          <div className="mt-20 space-y-16 md:mt-24 md:space-y-20">
+            <figure>
+              <img
+                src="/post-screening-talk.png"
+                alt="上映会後のトークイベントの様子"
+                className="w-full rounded-sm object-cover object-center"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption
+                className="mt-4 text-center text-base tracking-wide text-neutral-400 md:text-lg"
+                style={{ fontWeight: 300 }}
+              >
+                上映会後のトークの様子
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="/post-screening-group.png"
+                alt="上映会イベント後の集合写真"
+                className="w-full rounded-sm object-cover object-center"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption
+                className="mt-4 text-center text-base tracking-wide text-neutral-400 md:text-lg"
+                style={{ fontWeight: 300 }}
+              >
+                イベント後の集合写真
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 
