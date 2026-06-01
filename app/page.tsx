@@ -39,33 +39,32 @@ export default function Home() {
             DOCUMENTARY FILM / IN PRODUCTION
           </p>
 
-          <div className="rounded-2xl border border-white/20 bg-white/92 px-5 py-9 text-neutral-900 shadow-lg backdrop-blur-sm sm:px-8 sm:py-10">
-            <p className="mb-4 text-lg font-medium tracking-wide text-neutral-600 md:text-xl">
-              上映会開催
+          <div className="rounded-2xl border-2 border-white/40 bg-white/95 px-5 py-9 text-neutral-900 shadow-xl backdrop-blur-sm sm:px-8 sm:py-10">
+            <p className="mb-3 inline-block rounded-full bg-neutral-900 px-4 py-1.5 text-sm font-medium tracking-widest text-white md:text-base">
+              次回上映会
             </p>
-            <p className="mb-2 text-2xl font-semibold text-neutral-900 md:text-3xl">
-              2026年5月30日（土）
+            <p className="mb-2 text-lg font-medium tracking-wide text-neutral-600 md:text-xl">
+              ドキュメンタリー映画『残すということ』
             </p>
-            <p className="mb-2 text-xl font-semibold text-neutral-900 md:text-2xl">
-              勝浦町人形文化交流館
+            <p className="mb-6 text-2xl font-semibold leading-snug text-neutral-900 md:text-3xl">
+              海陽町上映会 決定
             </p>
-            <p className="mb-8 text-xl font-semibold text-neutral-900 md:text-2xl">
-              参加費：1,500円
+            <div className="mb-8 space-y-2 text-left sm:text-center">
+              <p className="text-xl font-semibold text-neutral-900 md:text-2xl">
+                日時：2026年7月18日（土）14:00〜
+              </p>
+              <p className="text-lg font-medium text-neutral-800 md:text-xl">
+                会場：現在調整中
+              </p>
+            </div>
+            <p className="mb-8 text-base leading-[1.95] text-neutral-600 md:text-lg">
+              詳細は決まり次第お知らせします。
             </p>
             <div className="flex flex-col items-center gap-5 sm:gap-6">
               <p className="text-lg font-medium leading-snug text-neutral-800 md:text-xl">
-                上映会の詳細・お申し込みはこちら
+                上映会のお問い合わせ・お申し込みはこちら
               </p>
               <ApplyScreeningButton className="w-full sm:max-w-md" emphasis />
-              <p className="max-w-md text-center text-base leading-[1.95] text-neutral-600 md:text-lg">
-                お支払いは、当日現金払い・事前決済のどちらにも対応予定です。
-              </p>
-              <p className="max-w-md text-center text-base leading-relaxed text-neutral-500 md:text-lg">
-                スマホが苦手な方は、店頭チケットでもお申し込みいただけます。
-              </p>
-              <p className="max-w-md text-center text-sm leading-relaxed text-neutral-500 md:text-base">
-                事前決済をご希望の方は、お申し込み時にメッセージ欄へご記入ください。
-              </p>
             </div>
           </div>
         </div>
@@ -140,10 +139,51 @@ export default function Home() {
         className="border-t border-neutral-200 bg-neutral-50/80 px-6 py-28 md:py-32"
       >
         <div className="mx-auto max-w-4xl space-y-14">
+          <div className="rounded-sm border border-neutral-300 bg-white px-6 py-10 shadow-sm md:px-10 md:py-12">
+            <p className="mb-4 text-sm font-medium tracking-[0.25em] text-neutral-500 md:text-base">
+              次回上映会
+            </p>
+            <h3
+              className="mb-2 text-xl font-medium text-neutral-800 md:text-2xl"
+              style={{ fontWeight: 300 }}
+            >
+              ドキュメンタリー映画『残すということ』
+            </h3>
+            <p className="mb-8 text-2xl font-semibold tracking-wide text-neutral-900 md:text-3xl">
+              海陽町上映会 決定
+            </p>
+            <div
+              className="space-y-4 text-lg leading-[2] text-neutral-800 md:text-xl"
+              style={{ fontWeight: 300 }}
+            >
+              <p>
+                <span className="font-semibold text-neutral-900">日時：</span>
+                <span className="font-medium text-neutral-900">
+                  2026年7月18日（土）14:00〜
+                </span>
+              </p>
+              <p>
+                <span className="font-semibold text-neutral-900">会場：</span>
+                <span className="font-medium text-neutral-900">
+                  現在調整中
+                </span>
+              </p>
+              <p className="text-neutral-600">
+                詳細は決まり次第お知らせします。
+              </p>
+            </div>
+          </div>
+
           <div>
             <h2 className="mb-9 text-lg tracking-[0.2em] text-neutral-500 md:mb-12 md:text-xl">
               上映会概要
             </h2>
+            <p
+              className="mb-8 text-base tracking-wide text-neutral-500 md:text-lg"
+              style={{ fontWeight: 300 }}
+            >
+              勝浦町上映会（2026年5月30日開催）
+            </p>
             <div
               className="space-y-6 text-lg leading-[2] text-neutral-800 md:text-xl"
               style={{ fontWeight: 300 }}
@@ -280,6 +320,50 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Post-screening impressions */}
+      <section className="border-t border-neutral-200 bg-neutral-50/40 px-6 py-28 md:py-36">
+        <div className="mx-auto max-w-3xl">
+          <h2
+            className="mb-14 text-center text-lg tracking-[0.2em] text-neutral-400 md:mb-20 md:text-xl"
+            style={{ fontWeight: 300 }}
+          >
+            上映後に届いた感想
+          </h2>
+          <div
+            className="mb-16 space-y-8 text-center text-lg leading-[2.1] text-neutral-600 md:mb-20 md:text-xl md:leading-[2.2]"
+            style={{ fontWeight: 300 }}
+          >
+            <p>
+              勝浦町での上映後、作品を観てくださった方から、ありがたい感想をいただきました。
+            </p>
+            <p>
+              すべての人に同じように届く作品ではないかもしれません。
+              <br />
+              けれど、必要な人の心には、確かに届いた。
+            </p>
+            <p>そのことを感じさせていただける言葉でした。</p>
+          </div>
+          <div className="space-y-14 md:space-y-16">
+            <blockquote
+              className="border-l border-neutral-300/80 py-1 pl-8 md:pl-10"
+              style={{ fontWeight: 300 }}
+            >
+              <p className="text-lg leading-[2.15] text-neutral-700 md:text-xl md:leading-[2.25]">
+                「顔も知らない先人の方々の想いと、今を生きる私たちの想いがひとつになる瞬間がある」
+              </p>
+            </blockquote>
+            <blockquote
+              className="border-l border-neutral-300/80 py-1 pl-8 md:pl-10"
+              style={{ fontWeight: 300 }}
+            >
+              <p className="text-lg leading-[2.15] text-neutral-700 md:text-xl md:leading-[2.25]">
+                「ここに2つ目の感想を掲載」
+              </p>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
       {/* Film Information Section */}
       <section className="mx-auto max-w-4xl border-t border-neutral-200 px-6 py-28 md:py-32">
         <h2 className="mb-9 text-lg tracking-[0.2em] text-neutral-500 md:mb-14 md:text-xl">
@@ -373,6 +457,14 @@ export default function Home() {
           NEWS
         </h2>
         <div className="space-y-8" style={{ fontWeight: 300 }}>
+          <NewsRow date="2026.06">
+            <div className="space-y-4">
+              <p className="mb-4">海陽町上映会が決定しました</p>
+              <p className="text-lg leading-relaxed text-neutral-700">
+                2026年7月18日（土）14:00〜に、海陽町にて上映会を開催します。会場は現在調整中です。詳細は決まり次第お知らせします。
+              </p>
+            </div>
+          </NewsRow>
           <NewsRow date="2026.05">
             <div className="space-y-8">
               <div>
