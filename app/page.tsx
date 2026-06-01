@@ -359,9 +359,31 @@ export default function Home() {
               className="border-l border-neutral-300/80 py-1 pl-8 md:pl-10"
               style={{ fontWeight: 300 }}
             >
-              <p className="text-lg leading-[2.15] text-neutral-700 md:text-xl md:leading-[2.25]">
-                「ここに2つ目の感想を掲載」
-              </p>
+              <div className="space-y-6 text-lg leading-[2.15] text-neutral-700 md:space-y-7 md:text-xl md:leading-[2.25]">
+                <p>
+                  先人たちの想いを受け継ぐこと。
+                  <br />
+                  そして、次の世代に残すこと…。
+                </p>
+                <p>
+                  昨日は、勝浦町出身の監督・山本晃大さんの作品「残すということ」を観てきました。
+                </p>
+                <p>
+                  ドキュメンタリー映画でしたが、地元・勝浦の名士の方々が語り部となって出演され、先人たちのさまざまな想いを次の世代に伝えるという内容でした。
+                </p>
+                <p>
+                  河川や道路などのインフラ整備、豊かな自然を活かした桜並木などの景観づくり、また地場産業や地域信仰、さらには阿波おどりに代表される文化振興まで、多様な視点から「残すということ」への大切さが綴られました。
+                </p>
+                <p>
+                  私がいちばん印象に残ったのは、「顔も知らない先人の方々の想いと、今を生きる私たちの想いがひとつになる瞬間がある」というコメント…。私も、阿波の歴史に興味があるため、そのコメントにとても強いシンパシーを感じました。
+                </p>
+                <p>
+                  上映後のトークイベントや地元のやっこ連による阿波おどりも、すべてが「勝浦愛」にあふれた素晴らしい内容でした。
+                </p>
+              </div>
+              <footer className="mt-7 text-base leading-relaxed tracking-wide text-neutral-400 md:mt-8 md:text-lg">
+                竹島宣裕さん（丸福食堂 ３代目店主）
+              </footer>
             </blockquote>
           </div>
         </div>
