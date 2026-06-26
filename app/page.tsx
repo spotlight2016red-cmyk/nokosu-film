@@ -51,14 +51,17 @@ export default function Home() {
             </p>
             <div className="mb-8 space-y-2 text-left sm:text-center">
               <p className="text-xl font-semibold text-neutral-900 md:text-2xl">
-                日時：2026年7月18日（土）14:00〜
+                日時：2026年7月18日（土）16:00〜18:00
               </p>
               <p className="text-lg font-medium text-neutral-800 md:text-xl">
-                会場：現在調整中
+                会場：NPO法人あったかいよう
+              </p>
+              <p className="text-base font-medium text-neutral-700 md:text-lg">
+                徳島県海部郡海陽町奥浦字堤ノ外32
               </p>
             </div>
             <p className="mb-8 text-base leading-[1.95] text-neutral-600 md:text-lg">
-              詳細は決まり次第お知らせします。
+              詳細は順次お知らせいたします。
             </p>
             <div className="flex flex-col items-center gap-5 sm:gap-6">
               <p className="text-lg font-medium leading-snug text-neutral-800 md:text-xl">
@@ -159,17 +162,23 @@ export default function Home() {
               <p>
                 <span className="font-semibold text-neutral-900">日時：</span>
                 <span className="font-medium text-neutral-900">
-                  2026年7月18日（土）14:00〜
+                  2026年7月18日（土）16:00〜18:00
                 </span>
               </p>
               <p>
                 <span className="font-semibold text-neutral-900">会場：</span>
-                <span className="font-medium text-neutral-900">
-                  現在調整中
+                <span className="mt-1 block font-medium text-neutral-900">
+                  NPO法人あったかいよう
+                </span>
+                <span className="mt-1 block text-neutral-700">
+                  徳島県海部郡海陽町奥浦字堤ノ外32
                 </span>
               </p>
+              <p className="text-neutral-700">
+                地域に残されてきた想いや記憶、そしてこれから何を未来へ残していくのか。映画上映を通じて、海陽町の皆さまと一緒に考える時間になればと思います。
+              </p>
               <p className="text-neutral-600">
-                詳細は決まり次第お知らせします。
+                詳細は順次お知らせいたします。
               </p>
             </div>
           </div>
@@ -519,7 +528,7 @@ export default function Home() {
             <div className="space-y-4">
               <p className="mb-4">海陽町上映会が決定しました</p>
               <p className="text-lg leading-relaxed text-neutral-700">
-                2026年7月18日（土）14:00〜に、海陽町にて上映会を開催します。会場は現在調整中です。詳細は決まり次第お知らせします。
+                2026年7月18日（土）16:00〜18:00、NPO法人あったかいよう（徳島県海部郡海陽町奥浦字堤ノ外32）にて上映会を開催します。詳細は順次お知らせいたします。
               </p>
             </div>
           </NewsRow>
