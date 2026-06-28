@@ -259,11 +259,11 @@ export default function Home() {
           </div>
 
           <div className="border-t border-neutral-200 pt-14">
-            <h3 className="mb-6 text-xl font-medium tracking-wide text-neutral-900 md:text-2xl">
+            <h3 className="mb-6 text-xl font-medium tracking-wide text-neutral-400 line-through decoration-double md:text-2xl">
               店頭チケットのご案内
             </h3>
             <div
-              className="space-y-4 text-lg leading-[2] text-neutral-800 md:text-xl"
+              className="space-y-4 text-lg leading-[2] text-neutral-400 line-through decoration-double md:text-xl"
               style={{ fontWeight: 300 }}
             >
               <p>店頭でもチケットをお求めいただけます。</p>
@@ -272,6 +272,9 @@ export default function Home() {
               </p>
               <p>スマホ操作が苦手な方も、お気軽にご利用ください。</p>
             </div>
+            <p className="mt-4 text-base text-neutral-500 md:text-lg">
+              ※こちらは勝浦町上映会限定の店頭販売のため、受付を終了しました。
+            </p>
           </div>
 
           <div className="border-t border-neutral-200 pt-14">
