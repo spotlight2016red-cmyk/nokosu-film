@@ -59,6 +59,9 @@ export default function Home() {
               <p className="text-base font-medium text-neutral-700 md:text-lg">
                 徳島県海部郡海陽町奥浦字堤ノ外32
               </p>
+              <p className="text-lg font-medium text-neutral-800 md:text-xl">
+                参加費：1,500円（事前予約・当日チケットOK）
+              </p>
             </div>
             <p className="mb-8 text-base leading-[1.95] text-neutral-600 md:text-lg">
               詳細は順次お知らせいたします。
@@ -174,6 +177,18 @@ export default function Home() {
                   徳島県海部郡海陽町奥浦字堤ノ外32
                 </span>
               </p>
+              <p>
+                <span className="font-semibold text-neutral-900">参加費：</span>
+                <span className="font-medium text-neutral-900">1,500円</span>
+              </p>
+              <p>
+                <span className="font-semibold text-neutral-900">
+                  お申し込み：
+                </span>
+                <span className="font-medium text-neutral-900">
+                  事前予約・当日チケットのどちらでもOK
+                </span>
+              </p>
               <p className="text-neutral-700">
                 地域に残されてきた想いや記憶、そしてこれから何を未来へ残していくのか。映画上映を通じて、海陽町の皆さまと一緒に考える時間になればと思います。
               </p>
@@ -187,12 +202,25 @@ export default function Home() {
             <h2 className="mb-9 text-lg tracking-[0.2em] text-neutral-500 md:mb-12 md:text-xl">
               上映会概要
             </h2>
-            <p
-              className="mb-8 text-base tracking-wide text-neutral-500 md:text-lg"
-              style={{ fontWeight: 300 }}
-            >
-              勝浦町上映会（2026年5月30日開催）
-            </p>
+            <div className="mb-8 flex flex-wrap items-center gap-3">
+              <span className="inline-block rounded-full bg-neutral-900 px-4 py-1.5 text-sm font-medium tracking-widest text-white md:text-base">
+                上映済み
+              </span>
+              <p
+                className="text-base tracking-wide text-neutral-500 md:text-lg"
+                style={{ fontWeight: 300 }}
+              >
+                勝浦町上映会（2026年5月30日開催）
+              </p>
+            </div>
+            <div className="mb-10 rounded-sm border border-neutral-200 bg-white px-6 py-7 text-center md:px-8 md:py-8">
+              <p className="text-xl font-semibold tracking-wide text-neutral-900 md:text-2xl">
+                満員御礼
+              </p>
+              <p className="mt-3 text-lg leading-[2] text-neutral-700 md:text-xl">
+                118人のご来場、誠にありがとうございました！
+              </p>
+            </div>
             <div
               className="space-y-6 text-lg leading-[2] text-neutral-800 md:text-xl"
               style={{ fontWeight: 300 }}
@@ -225,22 +253,7 @@ export default function Home() {
                 </span>
               </p>
               <p className="text-neutral-700">
-                店頭チケットでのお申し込みも可能です。
-              </p>
-              <p className="text-neutral-700">
-                ドキュメンタリー映画上映、上映後トーク（予定）
-              </p>
-            </div>
-            <div className="mt-12 flex flex-col items-center gap-6 sm:mt-14">
-              <p className="text-center text-lg font-medium text-neutral-800 md:text-xl">
-                この時間に参加したい方はこちら
-              </p>
-              <ApplyScreeningButton emphasis />
-              <p className="max-w-xl text-center text-base leading-[2] text-neutral-600 md:text-lg">
-                お支払いは、当日現金払い／事前決済のどちらにも対応予定です。
-              </p>
-              <p className="max-w-xl text-center text-base leading-[2] text-neutral-500 md:text-lg">
-                スマホが苦手な方は、店頭チケットでもお申込みいただけます。
+                ドキュメンタリー映画上映、上映後トークを実施しました。
               </p>
             </div>
           </div>
