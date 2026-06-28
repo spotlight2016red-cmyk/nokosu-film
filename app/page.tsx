@@ -145,7 +145,17 @@ export default function Home() {
         className="border-t border-neutral-200 bg-neutral-50/80 px-6 py-28 md:py-32"
       >
         <div className="mx-auto max-w-4xl space-y-14">
-          <div className="rounded-sm border border-neutral-300 bg-white px-6 py-10 shadow-sm md:px-10 md:py-12">
+          {/* ── 海陽町上映会（開催予定） ── */}
+          <div className="flex flex-wrap items-center gap-3">
+            <span className="inline-block rounded-full bg-neutral-900 px-4 py-1.5 text-sm font-medium tracking-[0.2em] text-white md:text-base">
+              開催予定
+            </span>
+            <h2 className="text-xl font-semibold tracking-wide text-neutral-900 md:text-2xl">
+              海陽町上映会
+            </h2>
+          </div>
+
+          <div className="rounded-sm border-2 border-neutral-900/15 bg-white px-6 py-10 shadow-sm md:px-10 md:py-12">
             <p className="mb-4 text-sm font-medium tracking-[0.25em] text-neutral-500 md:text-base">
               次回上映会
             </p>
@@ -198,21 +208,28 @@ export default function Home() {
             </div>
           </div>
 
+          {/* ── 勝浦町上映会（上映済み・開催レポート） ── */}
+          <div className="border-t-2 border-neutral-300 pt-14">
+            <div className="mb-3 flex flex-wrap items-center gap-3">
+              <span className="inline-block rounded-full border border-neutral-400 px-4 py-1.5 text-sm font-medium tracking-[0.2em] text-neutral-500 md:text-base">
+                上映済み
+              </span>
+              <h2 className="text-xl font-semibold tracking-wide text-neutral-700 md:text-2xl">
+                勝浦町上映会 開催レポート
+              </h2>
+            </div>
+            <p
+              className="text-base tracking-wide text-neutral-500 md:text-lg"
+              style={{ fontWeight: 300 }}
+            >
+              2026年5月30日（土）開催。ここからは、終了した勝浦町上映会のレポートです。
+            </p>
+          </div>
+
           <div>
             <h2 className="mb-9 text-lg tracking-[0.2em] text-neutral-500 md:mb-12 md:text-xl">
               上映会概要
             </h2>
-            <div className="mb-8 flex flex-wrap items-center gap-3">
-              <span className="inline-block rounded-full bg-neutral-900 px-4 py-1.5 text-sm font-medium tracking-widest text-white md:text-base">
-                上映済み
-              </span>
-              <p
-                className="text-base tracking-wide text-neutral-500 md:text-lg"
-                style={{ fontWeight: 300 }}
-              >
-                勝浦町上映会（2026年5月30日開催）
-              </p>
-            </div>
             <div className="mb-10 rounded-sm border border-neutral-200 bg-white px-6 py-7 text-center md:px-8 md:py-8">
               <p className="text-xl font-semibold tracking-wide text-neutral-900 md:text-2xl">
                 満員御礼
@@ -278,16 +295,19 @@ export default function Home() {
           </div>
 
           <div className="border-t border-neutral-200 pt-14">
+            <p className="mb-2 text-sm font-medium tracking-[0.2em] text-neutral-400 md:text-base">
+              勝浦町上映会
+            </p>
             <h3 className="mb-6 text-xl font-medium tracking-wide text-neutral-900 md:text-2xl">
-              当日の上映会の司会が決定！
+              当日の上映会の司会
             </h3>
             <p
               className="mb-10 text-lg leading-[2] text-neutral-800 md:text-xl"
               style={{ fontWeight: 300 }}
             >
-              5月30日開催の映画上映会では、
+              5月30日開催の勝浦町上映会では、
               <br />
-              同級生であり、フリーアナウンサーとして活動している松本 由里子さんに司会をお願いする予定です。
+              同級生であり、フリーアナウンサーとして活動している松本 由里子さんに司会を務めていただきました。
             </p>
             <div className="flex flex-col gap-10 md:flex-row md:items-start md:gap-12">
               <div className="mx-auto w-full max-w-xs shrink-0 md:mx-0">
@@ -325,14 +345,17 @@ export default function Home() {
           </div>
 
           <div className="border-t border-neutral-200 pt-14">
+            <p className="mb-2 text-sm font-medium tracking-[0.2em] text-neutral-400 md:text-base">
+              勝浦町上映会
+            </p>
             <h3 className="mb-6 text-xl font-medium tracking-wide text-neutral-900 md:text-2xl">
-              勝浦町の、やっこ連の参加決定！
+              やっこ連の参加
             </h3>
             <p
               className="mb-10 text-lg leading-[2] text-neutral-800 md:text-xl"
               style={{ fontWeight: 300 }}
             >
-              ラストを飾っていただきます！
+              勝浦町のやっこ連の皆さんに、ラストを飾っていただきました！
             </p>
             <img
               src="/yakkoren.jpg"
