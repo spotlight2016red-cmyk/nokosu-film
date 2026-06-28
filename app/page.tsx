@@ -539,8 +539,8 @@ export default function Home() {
         <h2 className="mb-9 text-lg tracking-[0.2em] text-neutral-500 md:mb-14 md:text-xl">
           NEWS
         </h2>
-        <div className="space-y-8" style={{ fontWeight: 300 }}>
-          <NewsRow date="2026.06">
+        <div className="relative" style={{ fontWeight: 300 }}>
+          <NewsRow date="2026.06" isLatest>
             <div className="space-y-4">
               <p className="mb-4">海陽町上映会が決定しました</p>
               <p className="text-lg leading-relaxed text-neutral-700">
@@ -839,16 +839,53 @@ function InfoRow({ label, value }: InfoRowProps) {
 type NewsRowProps = {
   date: string;
   children: ReactNode;
+  isLatest?: boolean;
 };
 
-function NewsRow({ date, children }: NewsRowProps) {
+function NewsRow({ date, children, isLatest = false }: NewsRowProps) {
   return (
-    <div className="flex flex-col md:flex-row md:gap-12">
-      <span className="mb-2 min-w-[120px] text-lg text-neutral-500 md:mb-0 md:text-xl">
-        {date}
-      </span>
-      <div className="min-w-0 flex-1 text-lg leading-relaxed text-neutral-800 md:text-xl">
-        {children}
+    <div className="relative flex gap-5 pb-12 last:pb-0 [&:last-child_.tl-line]:hidden md:gap-8">
+      {/* タイムラインの軸（縦ライン＋ドット） */}
+      <div className="relative flex w-4 shrink-0 justify-center">
+        <span
+          className="tl-line absolute top-2 bottom-0 w-px bg-neutral-200"
+          aria-hidden
+        />
+        <span
+          className={
+            "relative z-10 mt-1.5 block rounded-full ring-4 ring-white " +
+            (isLatest ? "size-4 bg-neutral-900" : "size-2.5 bg-neutral-300")
+          }
+          aria-hidden
+        />
+      </div>
+
+      {/* 本文 */}
+      <div className="min-w-0 flex-1">
+        <div className="mb-4 flex flex-wrap items-center gap-3">
+          <span
+            className={
+              isLatest
+                ? "text-xl font-medium text-neutral-900 md:text-2xl"
+                : "text-lg text-neutral-400 md:text-xl"
+            }
+          >
+            {date}
+          </span>
+          {isLatest && (
+            <span className="inline-block rounded-full bg-neutral-900 px-3 py-1 text-xs font-medium tracking-[0.2em] text-white">
+              最新
+            </span>
+          )}
+        </div>
+        <div
+          className={
+            "min-w-0 text-lg leading-relaxed md:text-xl " +
+            (isLatest ? "text-neutral-800" : "text-neutral-500")
+          }
+        >
+          {children}
+        </div>
       </div>
     </div>
   );
