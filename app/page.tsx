@@ -145,17 +145,16 @@ export default function Home() {
         className="border-t border-neutral-200 bg-neutral-50/80 px-6 py-28 md:py-32"
       >
         <div className="mx-auto max-w-4xl space-y-14">
-          {/* ── 海陽町上映会（開催予定） ── */}
-          <div className="flex flex-wrap items-center gap-3">
-            <span className="inline-block rounded-full bg-neutral-900 px-4 py-1.5 text-sm font-medium tracking-[0.2em] text-white md:text-base">
-              開催予定
-            </span>
-            <h2 className="text-xl font-semibold tracking-wide text-neutral-900 md:text-2xl">
-              海陽町上映会
-            </h2>
-          </div>
-
-          <div className="rounded-sm border-2 border-neutral-900/15 bg-white px-6 py-10 shadow-sm md:px-10 md:py-12">
+          {/* ── 海陽町上映会（開催予定）: 白の明るいパネル ── */}
+          <div className="rounded-2xl bg-white p-7 shadow-md ring-1 ring-neutral-900/10 md:p-10">
+            <div className="mb-7 flex flex-wrap items-center gap-3">
+              <span className="inline-block rounded-full bg-neutral-900 px-4 py-1.5 text-sm font-medium tracking-[0.2em] text-white md:text-base">
+                開催予定
+              </span>
+              <h2 className="text-xl font-semibold tracking-wide text-neutral-900 md:text-2xl">
+                海陽町上映会
+              </h2>
+            </div>
             <p className="mb-4 text-sm font-medium tracking-[0.25em] text-neutral-500 md:text-base">
               次回上映会
             </p>
@@ -208,9 +207,10 @@ export default function Home() {
             </div>
           </div>
 
-          {/* ── 勝浦町上映会（上映済み・開催レポート） ── */}
-          <div className="border-t-2 border-neutral-300 pt-14">
-            <div className="mb-3 flex flex-wrap items-center gap-3">
+          {/* ── 勝浦町上映会（上映済み・開催レポート）: 落ち着いたグレーのパネル ── */}
+          <div className="space-y-14 rounded-2xl bg-neutral-100 p-7 ring-1 ring-neutral-900/[0.06] md:p-10">
+            <div>
+              <div className="mb-3 flex flex-wrap items-center gap-3">
               <span className="inline-block rounded-full border border-neutral-400 px-4 py-1.5 text-sm font-medium tracking-[0.2em] text-neutral-500 md:text-base">
                 上映済み
               </span>
@@ -364,6 +364,7 @@ export default function Home() {
               loading="lazy"
               decoding="async"
             />
+          </div>
           </div>
         </div>
       </section>
