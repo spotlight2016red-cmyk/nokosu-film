@@ -74,7 +74,9 @@ export function ContactForm() {
             <option value="" disabled>
               ご用件を選択してください
             </option>
-            <option value="上映会に申し込む">上映会に申し込む</option>
+            <option value="海陽町上映会に申し込む">
+              海陽町上映会に申し込む
+            </option>
             <option value="問い合わせをする">問い合わせをする</option>
           </select>
         </div>
