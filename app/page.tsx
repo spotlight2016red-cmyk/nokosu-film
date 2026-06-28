@@ -36,7 +36,7 @@ export default function Home() {
             これは、ただの映画上映ではなく、何を大切に生きていくのかを見つめる時間です。
           </p>
           <p className="mb-8 text-lg tracking-widest opacity-90 md:mb-10 md:text-xl">
-            DOCUMENTARY FILM / IN PRODUCTION
+            DOCUMENTARY FILM / COMPLETED
           </p>
 
           <div className="rounded-2xl border-2 border-white/40 bg-white/95 px-5 py-9 text-neutral-900 shadow-xl backdrop-blur-sm sm:px-8 sm:py-10">
@@ -455,7 +455,7 @@ export default function Home() {
           <InfoRow label="製作" value="「残すということ」映画製作準備委員会" />
           <InfoRow label="製作会社" value="SPOTLIGHT FILMS（予定）" />
           <InfoRow label="撮影場所" value="徳島県勝浦郡勝浦町大字生名字神の木1-1" />
-          <InfoRow label="製作状況" value="製作中" />
+          <InfoRow label="製作状況" value="製作済み" />
         </div>
       </section>
       <section className="mx-auto max-w-5xl px-6 py-28 md:py-32">
