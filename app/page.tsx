@@ -733,21 +733,7 @@ export default function Home() {
               q="スマホが苦手でも申し込めますか？"
               a={
                 <>
-                  はい。店頭チケットでもご案内予定です。
-                  <br />
-                  <br />
-                  居酒屋 咲楽(勝浦町)でも
-                  <br />
-                  お買い求め可能です。
-                  <br />
-                  <a
-                    href="https://www.instagram.com/katuuraayu/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-neutral-900 underline underline-offset-2 hover:text-neutral-600"
-                  >
-                    https://www.instagram.com/katuuraayu/
-                  </a>
+                  はい。まずはお電話ください。ご対応いたします。
                   <br />
                   <br />
                   当日、会場での受付も可能となりました！
